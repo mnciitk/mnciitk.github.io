@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Club &middot; Media and Cultural Council, IIT Kanpur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/FAC.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/loader.css">
+   
+    <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/sidnav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+    <script src="js/sidenavMobile.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span id="loader"></span>
+  </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler hoverable">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/oat1.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+            <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+            <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+        </div>
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
+        </div>
+      </div>
+  </div>
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#7BC1FF ;"" >&times;</a>
+    <div><a key='Anime'>Anime Society</a></div>
+    <div><a key='book'>Book Club</a></div>
+    <div><a key='Dance' >Dance Club</a></div>
+    <div><a key='DebSoc'>Debate and Discussion Society</a></div>
+    <div><a key='DNA'>Design And Animation Club</a></div>
+    <div><a key='Dramatics'>Dramatics Club</a></div>  
+    <div><a key='ELS'>English Literary Society</a></div>
+    <div><a key='fac'>Fine Arts Club</a></div>
+    <div><a key='film'>Film Club</a></div>
+    <div><a key="HSS">Hindi Sahitya Sabha</a></div>
+    <div><a key="hh">Humour House</a></div>
+    <div><a key='music'>Music Club</a></div>
+    <div><a key='photo'>Photography Club</a></div>
+    <div><a key='quiz'>Quiz Club</a></div>
+    <div><a key='sfs'>Student Film Society</a></div>
+  
+  </div> 
+  <div class="part23" style="background-color: #7BC1FF;">
+    <!-- <img src="img/main.png" alt="" class="aimg"> -->
+  </div>
+  <div class="mega">
+    <header class="resize" >
+      <img class="img-header" src="img/cover/quiz.jpg" >
+    </header>
+    
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find all the clubs here</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li><a key='Anime'>Anime Society</a></li>
+          <li><a key='book'>Book Club</a></li>
+          <li ><a key='Dance' >Dance Club</a></li>
+          <li><a key='DebSoc'>Debate and Discussion Society</a></li>
+          <li><a key='DNA'>Design And Animation Club</a></li>
+          <li><a key='Dramatics'>Dramatics Club</a></li>
+          <li><a key='ELS'>English Literary Society</a></li>
+          <li><a key='fac'>Fine Arts Club</a></li>
+          <li><a key='film'>Film Club</a></li>
+          <li><a key='HSS'>Hindi Sahitya Sabha</a></li>
+          <li><a key='hh'>Humour House</a></li>
+          <li><a key='music'>Music Club</a></li>
+          <li><a key='photo'>Photography Club</a></li>
+          <li><a key='quiz'>Quiz Club</a></li>         
+          <li><a key='sfs'>Student Film Society</a></li> 
+         
+  
+        </ul>
+      </div>
+    </div>
+    <div class="sid" style="background-color: #7BC1FF;">  
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+    </div>
+    <main>
+      <section id="section-13">
+
+      <div class="aboutu-container">
+        <div class="aboutu">
+           
+          <div class="aboutu-info">
+            <h2>ABOUT US</h2>
+           <p> “The one who knows all the answers, has not been asked all the questions.”<br>
+
+            Enjoy showing that you know eclectic trivia about everyday objects? Love going through Wiki links when bored? Get a high out of obscure knowledge and solving puzzles? Well then, have you considered being a quizzer?<br>
+            
+            We at the Quiz Club welcome all those with the pathological problem of knowing a lot of stuff and others too. The club aims to introduce the campus community to the joys of quizzing, question framing and if you’ve never answered questions that don’t pertain to academics, don’t worry, we’re here to teach you how to quiz and how to make a quiz too!<br>
+            
+            The Club has introduced many new quizzes for the campus community in order to enhance its reach and participation. These include quizzes on pop-culture such as the Breaking Bad Quiz and the Game of Thrones Quiz. This year, we collaborated with the Anime Society for developing a Pokemon-themed quiz, as well as with the English Literary Society to conduct a LIT Quiz; both of which witnessed good participation from the junta.<br>
+            
+            
+            We hold quizzes specifically for the freshers, but we also conduct open quizzes, in which anyone from the campus community can join in. Best of all? Keep doing well, and you can brag about it to anyone you meet once you get on our leaderboard for the year. Our teams also take part in popular quizzes that are conducted outside the campus and return with flying colours.<br>
+            
+            At the Quiz Club, we believe that the onus of quizzers isn’t to win but to learn, and we hope you join us while on your journey through college. And don't forget, "Quizzing is the second easiest way of earning money in the campus".
+          </p>
+          </div>
+        </div>
+    </div> 
+  
+          <div class="section-header text-center">
+            <h2>OUR EVENTS</h2>
+          </div>
+          
+         <div class="list-type-quiz">
+             <div class="divider1">
+                  <!--<li>Harry Potter trivia quiz for freshers (freshers� week).</li>
+                  <li>Orthodox or Cinematic (January second week).</li>
+                  <li>Ha Me (along with Know Your Genre).</li> -->
+                  <div class="list-type5">
+                    <ol>
+                    <li><span><b>Fresher's Quiz  </b> <br>
+                      It is the first event organized by Club for the new batch to participate in.</span></li>
+                      <li><span><b>Quiz Workshop</b><br>
+                          Guiding people towards making good quizes. </span></li> 
+                    </ol>
+                  </div>
+             </div>
+             <div class="divider2">
+               <!--   <li>Know Your Genre (October in line with Odyssey).</li>
+                  <li>Crypto Crossword (September first week).</li>
+                  <li>Comic Without Text (Galaxy).</li> -->
+                  <div class="list-type6">
+                    <ol>  
+                      <li><span><b> Quizfest </b><br>
+                      Conducted for a week and topics in this events are suggested by students itself.</a></li>   
+                    </ol>
+                  </div>
+             </div>
+         </div>
+       
+         <div class="section-header text-center section-team">
+            <h2>MEET THE TEAM</h2>
+         </div>
+            
+            <div class="container">
+              <div class="row ">
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="https://lh3.googleusercontent.com/fife/AAWUweVa_DuCGGOzy3-oSO1rzc0g1YmvtTswtjPiqKepSSsFlgJFpvDEdXQNe0Ge1dJ4zX7tD9LS9cL4pEvnzS1ztUwly_8Hj_ajcGCkJ4EX8-VdYP4q1YJ66tPWg5QgKTgBmdjFHyvIZKxwJUFoUiISyiDVfZRQ_TkjysTApppxPDPS-b4hejTOsIVQenGI3BQ34UipsHghBB3hfKN26uqKse7zq_pE9HVm3ffqhOucQGtFvUJ1IvWELb8ufc7aB0WcChFVtyoT7_Ykg9TzmUz0wPb4J4P0nLDX6wloxNY9z91HLQJJmB81AYvihG67ISwEX94IYiGPRYJEEBvnuGF9Rjtnas_zo_bgkl2Ddxje9t-tkF5UwrZh_zEm_5bsibDpHiU3x87AqpiSwCFqM0hmEE9fmLUVVmXiZjPu137L5ioTiXPIrRbMrkGEpHkgYYG2SXdmKEt41L1XZqSGrvkxwPbfUYp1wiZIV8EzFuIz9ZZuicQ0_UA4G1m1VIaHs0M7duYuKP7dgNieDs8PWhBSiRyanU7yD4hGq_e1aTLdH8amGrTJ6G55FUyEFA_uTOq9jKaiHVx4CcNS4uVFDcStm-FBWU3nAtHPBO6VFtu85bBe4VxIpjzeOHmO7lP3UBl3VxenRjKfooporGILG6P-mVm9wdQpkbxPaGuXGNLHi3_xwXGW8QGu2vFt-yo8hjIH1W09wEHBUA1346XUdUKALkjRRZFmCo1Z7bM=w400-h380-p-k-nu-ft" width="380" height="300" style='object-fit: contain; width: 100%; height: 100%;'>
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Sanskar Shah</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/sanskar.shah.242" class="fab fa-facebook"></a></li>
+                              <!-- <li><a href="" class="fab fa-instagram"></a></li> -->
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="https://lh3.googleusercontent.com/fife/AAWUweUFQ3zyhojdRxP0nk-D6Zzntyd4C_ig435bK78m13X2R3B9dP_HjwkDbgRaOfFV1RGU_LuPzE2id-yd2zhpaU0ZA4wey_xs4C4xs0fPNbbujCQHHLi0ddre4PIUA_DMVI90Xa37PUXEsGN7CDqQC0kNnUQvGpF4gj_v0aWOWjGBbKG00qJJ1g1R8ro8dvUVLw_nMLDt1of9rGTrTrxiUasjkaEqpqTGKPyJuo46S67uv4XpN5O_yVgjN2LwmPzTdt4r-S6rMMlvWYsvw3HyAJG3v7Oqzl77NYjAynUtUYoCDwWK13wQ68gyZ3LZCV9nbWqMKphpQ1j2_qctSwUAm_gAeO1unD2pebsDPfBz_gT_OOVI4o5LzPWDgLNs6tNXO7KjJRSRGgWUDr1vAfamXjUx2SMPgy6-lWYUbrrr74hFvZLYl40AwKhUyo0moqqKsGO62cQvdRl1j2XD63fXx_KNYw9Nxlvt1Ct15QF1zJ-7CEo5uUKMWU9oD_GufLzBPyqjk_jVmJXBiPrAkIPobqJzAv8jYTAE4kar6KYz3It8y8IXOz2Glz0USIRmYYe24__LMrnn1Gp1WDIyEXQ_gmpDZnxjY8SsfxWrOvbVDlUGBIvg5mXroMBOuJJcOH607jn4YAwQCI6WOhIv8o_L-43g7sM7ZeBIZEe3yLVJ4cBZWntCzaIfToolIq0HCbOHo91nyC8YceTurDMt7giNvnWZw1L9P3xtP_E=w400-h380-p-k-nu-ft" width="380" height="300" style='object-fit: contain; width: 100%; height: 100%;'>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Abhay Dayal Mathur</h3>
+                            <span class="post">Coordinator</span>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/abhay.dayal" class="fab fa-facebook"></a></li>
+                            <li><a href="https://www.instagram.com/abhaydayalmathur/" class="fab fa-instagram"></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="https://lh3.googleusercontent.com/fife/AAWUweWfWeiKzrApxjP9Mu2DJp3q-p4jLd2rBJqRaAE3lXjkjPSv6BKbjShQJGwoF5DLOTruh_QGApFffMz8wh3cQHSV--LvLjAxoHJBI1HeHHeu1Z7R2LKT7Y7maOEBu0ZpY3PoRAw6anO_3oRm58lQUCOoOPGxKS326msRzOe0CQtVuPjvcZpUcfbZHTaeJ0ATx8-ck-pe72v6GD_W2pYsl8T0g3WTCl1jPud_kyZc4k3zI8s_G-wrowf9NxxQAqU3T5t1t0IRWsYYzemi-_R4cqzRCoVzl54XaEXHSTzguB-99ZeNosksy4pCYp6dYMZT_VnyVKDI6E2312AKpmUzxmzYUyklX6OrSyRwp6rP8CNthq4nlT9wXOT21py8-w-7jvMQadVbNCCVTXGEGB2x2BS_0SJB-4BGwK4EPIEggPFl2Vg_jPQWbKMa9Vva1kPX1BoceWbpnCk7FGEM-c8S6GRAYGiSFiBmh8Inw9sAnNjtjzqrMx9H3ZfU9ihkL4hOKiX-TO-TnffoMlrWikJWKnJJITF_On-mR0qjrIkZ7yJ_2BDhnHoj2BE6QMQxYiElXXnWTKshonpguS-RnZQucmUSyiKA1UIUj3cKM9RhOVQcpaVELTmErLqfE_urV8FjuhXa9iGgdVZ3n_CumQ8dWeDP1E8ojR-crRo3yHEYKJPG4m_qL2c-ktLwvuOXuMISaq3PjwqEzUuuKnNM-QEmq4K-JGGWqfTtgwI=w400-h380-p-k-nu-ft" width="380" height="300" style='object-fit: contain; width: 100%; height: 100%;'>
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Varun Muralidharan</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/varun.2501/" class="fab fa-facebook"></a></li>
+                              <li><a href="https://www.instagram.com/crazy.bad_vr7/" class="fab fa-instagram"></a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="https://lh3.googleusercontent.com/fife/AAWUweWjpnfy9NAnAimc1md7K8BYWahH3XtTZpNNgPfGce19KL0LCl8luNezKzleA_L5QzlDWCQ9i95VcaOtXpEYprMAPUf7IhQvP5ZeWnoivWPY3FS5N5CwAP8_c5dU2MahIi7EPwcSfmFe7l1e50wRnuSJTgHRkvFaT9XCfK5G6Jjh_5lOLK8YZaWT8kJXT72soIcG3EVr1lGkuaabQU_vjpINdqD4wcwhuyMSrwCuKBS2ThMVJIrUU9aHcNJOTW0Hw6s_6WbW42v-RocklZ3ZomaOLHjWUi-qtToUNq69TIqBXWIT-wmZmo_5sRYA2tYRAHN-T6gRTdWlHXCZlEfcmSR4JloiZDUjPYNv5aMYbBTT1_XTXf1wLQrYe6uDzgjb2PP8PYY5_5RzW70wXg3ldVN0Ug4E90cR8vd3zQMaFFdJawf8K1SfIM6eWjr9VNLWo8sCrLgw0ckbCRDMv9RTMSIi7tEvsEtxoWcWEY6xoR3WCK_Qbr6MaVgP2MgIfRb2syWXnovnDbI_OL3FNJGJ9QC-vUSF2_vqk4x5oYfnQuld6UGjX94soKQYGWhcO3rU_bKSWiuwnia5ATCJzl_XBvHCdqqwktdATz-augaVDioUGvFyE4XWWPYhFGATfzePSjBkJn_NfWyF0gGwNCgJppLlTshJn3SQIBdktkOuuWvP9igiIgnwiHFovNkvwsikHwqztsCBAFhukSkF74cNCSvc1HMBGfYD1Y0=w400-h380-p-k-nu-ft" width="380" height="300" style='object-fit: contain; width: 100%; height: 100%;'>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Prakhar Mishra</h3>
+                            <span class="post">Coordinator</span>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/prakhar.mis/" class="fab fa-facebook"></a></li>
+                            <li><a href="https://www.instagram.com/prakhar1104/" class="fab fa-instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+  
+              </div>
+          </div>  
+                 
+        
+  
+                <!-- Section-header -->
+                <div class="section-header text-center get-touch">
+                  <h2 >GET IN TOUCH</h2>
+                </div>
+                <!-- /Section-header -->
+        
+                <!-- contact -->
+              
+
+               <div class="column-contact-qc">
+                 <div class="row">
+                <div class="col-sm-12 col-md-3 quiz-info">
+                  
+                     <div class="text-center">
+                      <a href="https://www.facebook.com/qciitk/"><i class="fab fa-facebook-f" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Facebook</h3>
+                      <p>Like and Follow our facebook page for regular updates</p>
+                     </div>
+                  
+                  </div>
+
+                  <div class="col-sm-12 col-md-3 quiz-info">
+                  
+                    <div class="text-center">
+                    <a href="https://www.instagram.com/qciitk/"><i class="fab fa-instagram" aria-hidden="true" style="transform: scale(2);"></i></a>
+                    <h3>Instagram</h3>
+                    <p>Follow us on Instagram.</p>
+                    </div>
+                  </div>
+                  
+                <div class="col-sm-12 col-md-3 quiz-info">
+                  
+                      <div class="text-center">
+                      <a href="https://qciitk.wordpress.com/"><i class="fab fa-wordpress" aria-hidden="true" style="transform: scale(2);""></i></a>
+                      <h3>WordPress</h3>
+                      <p>Follow our page on Wordpress</p>
+                      </div>
+                 
+                </div>
+
+                <div class="col-sm-12 col-md-3 quiz-info">
+                  
+                  <div class="text-center">
+                  <a href="https://discord.gg/mTbK43E"><i class="fab fa-discord" aria-hidden="true" style="transform: scale(2);""></i></a>
+                  <h3>Discord</h3>
+                  <p>Join Our Discord Server</p>
+                  </div>
+             
+                </div>
+
+                </div>
+              </div> 
+          
+  
+      </section>
+      <!-- <i class="fab fa-facebook-f"></i> -->
+    
+    </main>
+  
+  </div>
+  
+  <footer>
+        
+    <div class="row">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+    
+  </footer>
+
+
+</body>
+</html>

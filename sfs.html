@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Student's Film Society &middot; Media and Cultural Council, IIT Kanpur</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+        <link rel="stylesheet" href="css/FAC.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/loader.css">
+        
+        <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/sidnav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+        <script src="js/sidenavMobile.js"></script>
+
+        <script src="js/events.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/loader.js"></script>
+        <script src="js/card.js"></script>
+
+    </head>
+    <body>
+      <div class="loader-wrapper">
+        <span id="loader"></span>
+      </div>
+        <div class="part23" style="background-color: #BDB2FF;">
+            <!-- <img src="img/main.png" alt="" class="aimg"> -->
+          </div>
+          <div class="cursor">
+            <div class="cursor__ball cursor__ball--big ">
+              <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+              </svg>
+            </div>
+            
+            <div class="cursor__ball cursor__ball--small">
+              <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+              </svg>
+            </div>
+          </div>
+          <div class="menu-wrap">
+            <input type="checkbox" class="toggler hoverable">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                  <div>
+                    <ul>
+                      <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+                      <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+                      <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+                      <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+                      <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+                      <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+                    </ul>
+                  </div>
+                  <div class="box-container">
+                    <img src="img/oat1.png" alt="" class="navimg navimg1">
+                    <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+                    <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+                    <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+                    <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+                    <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+                </div>
+                  <div class="social-nav model-1">
+                    <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+                    <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+                    <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+                  </div>  
+                </div>
+              </div>
+          </div>
+          <div id="mySidenav" class="sidenav2">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#BDB2FF ;"" >&times;</a>
+            <div><a key='Anime'>Anime Society</a></div>
+            <div><a key='book'>Book Club</a></div>
+            <div><a key='Dance'>Dance Club</a></div>
+            <div><a key='DebSoc'>Debate and Discussion Society</a></div>
+            <div><a key='DNA'>Design And Animation Club</a></div>
+            <div><a key='Dramatics'>Dramatics Club</a></div>  
+            <div><a key='ELS'>English Literary Society</a></div>
+            <div><a key='fac'>Fine Arts Club</a></div>
+            <div><a key='film'>Film Club</a></div>
+            <div><a key="HSS">Hindi Sahitya Sabha</a></div>
+    <div><a key="hh">Humour House</a></div>
+            <div><a key='music'>Music Club</a></div>
+            <div><a key='photo'>Photography Club</a></div>
+            <div><a key='quiz'>Quiz Club</a></div>
+            <div><a key='sfs'>Student Film Society</a></div>
+           
+          </div> 
+        <div class="mega">
+          <header class="resize" >
+            <img class="img-header" src="img/cover/sfs.jpg" >
+          </header>
+         
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Find all the clubs here</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <ul>
+                    <li><a key='Anime'>Anime Society</a></li>
+                    <li><a key='book'>Book Club</a></li>
+                    <li ><a key='Dance' >Dance Club</a></li>
+                    <li><a key='DebSoc'>Debate and Discussion Society</a></li>
+                    <li><a key='DNA'>Design And Animation Club</a></li>
+                    <li><a key='Dramatics'>Dramatics Club</a></li>
+                    <li><a key='ELS'>English Literary Society</a></li>
+                    <li><a key='fac'>Fine Arts Club</a></li>
+                    <li><a key='film'>Film Club</a></li>
+                    <li><a key='HSS'>Hindi Sahitya Sabha</a></li>
+                    <li><a key='hh'>Humour House</a></li>
+                    <li><a key='music'>Music Club</a></li>
+                    <li><a key='photo'>Photography Club</a></li>
+                    <li><a key='quiz'>Quiz Club</a></li>         
+                    <li><a key='sfs'>Student Film Society</a></li> 
+                  
+            
+                  </ul>
+                </div>
+              </div>
+              <div class="sid" style="background-color: #BDB2FF;">  
+                <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+              </div>
+              <main>
+                <section id="section-11">
+
+                       <div class="aboutu-container">
+                        <div class="aboutu">
+                           
+                          <div class="aboutu-info">
+                            <h2>ABOUT US</h2>
+                            <p>The Students' Film Society is the shield that guards the realms of free and independent film criticism in a 
+                              world where filmmakers are increasingly chasing box office success over artistic expression, by aiming to
+                              spread awareness and appreciation for independent filmmakers and artists, all the while hoping to instill 
+                              in the campus junta a taste in movies driven by a thought process worthy of their intellect.
+               
+                         Long story short, we love movies. And we hope to educate the campus junta to appreciate cinema as an artform (which it is),
+                            while trying not to come across as pretentious (which we are). We screen movies, to support indie filmmakers, and to provide
+                            the campus junta a good time.
+               
+                         We also screen TV shows, matches, and pretty much anything you'd want to watch. And if a movie is too good, we discuss what makes it so good.
+                            We'll also have more fun events round the year. Adios!</p>
+                        </div>
+                        </div>
+                    </div> 
+    
+                    <div class="section-header text-center">
+                      <h2>EVENTS</h2>
+                    </div>
+                    
+                       <div class="divider1">
+                            <div class="list-type5">
+                              <ol>
+                              <li><span><b>Film Screenings</b><br>
+                                Screening of movies ranging from Indies to mainstream Hollywood/Bollywood </span></li>   
+                                <li><span><b>Sports Events, TV Shows Screenings</b><br>
+                                    It's Students's Film Society, right? Yeah, but we do screen Football, Cricket matches, and other Important Sports Events, coz Why Not? </span></li> 
+                                 
+                              </ol>
+                            </div>
+                       </div>
+                       <div class="divider2">
+                            <div class="list-type6">
+                              <ol >
+                                <li><span><b>Film Discussion Sessions</b><br>
+                                    Self proclaimed film critcs and people with a pretentious taste in movies, come together to discuss and criticize a movie on every aspect it can be judged upon</span></li> 
+                                <li><span><b>Montage</b><br>
+                                IITK's very own International Film Festival </span></li> 
+                              </ol>
+                            </div>
+                       </div>
+                   
+                    
+                   <div class="section-header text-center section-team">
+                      <h2>MEET THE TEAM</h2>
+                   </div>
+                      
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-lg-6">
+                                <div class="our-team">
+                                    <div class="pic">
+                                        <img src="https://lh3.googleusercontent.com/fife/AAWUweVbCwj1EkxENmzqWq2UEG7_x85eT6mx8mmsbReJs-4dSuqBl1p511xkkanA4m4u__zSMaNK4Kq-in-2CNuQTIPkALK9ZgfAZ2KpFnjq_9_hSGsMCzAUIKBUtt9vzYdBS_v0kx4QXikEtpaMvTGWhcshIPJ6_eO_kpEoCp_vYIzLitVEaj2pxA39jTIEEAKXVSbAqvniAqa1gT-a8ru-dcbp8G_J63iuoJfJR9xWsVcbLfj6rpPW_qRbnlgdiLKlCAGoy0nBxF3guLm4SWjCTl2eOirXt9AaaXw6hd8KMidusuWhfJhdWYa86o4UHYEqgGIH-czaEsumpUrbe1u-35EgiLm1nHUlG3HGTglp1KUbegw6HeUuwvLEX_6XULC8epOBEVBy1UDgUJr-4ZIWIyUS3z0fXuzKWNdiX2NYYmV4L6BQZ4RhZf7VMAq9cGdR5SQR7yOqGZ_C2CPp9K2KKHedNOY679cyWFX05hgoV_VCGE3arUzp7lHAeFleQNLXqlWu39w8ytOSUPFvj93GE58RdP_Aiy0sik1HPpI7J97ff5Luyh-acIG0a-IsfaiAmsQb2ZRxDDkX_UwYAL4FEgGJS3sggdePcsA1laxxZG9vXMBEIE9AcB7VZHnHUAxUFRfUW6yISifKMiaSCZemuSpzP92In9hqXyqmNECVvRqrsaY3xkRbly43RrJ3vtZNzphcw8GUW_XveIS4_N6IHeqEdUt-PVcQlgM=w400-h380-p-k-nu-ft" width="350" height="200" style='object-fit: contain; width: 100%; height: 100%;'>
+                                    </div>
+                                    <div class="team-content">
+                                        <h3 class="title">Praful Samadhan Mane</h3>
+                                        <span class="post">Coordinator</span>
+                                    </div>
+                                    <ul class="social">
+                                        <!-- <li><a href="" class="fab fa-facebook"></a></li>
+                                        
+                                        <li><a href="" class="fab fa-instagram"></a></li>
+                                         -->
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6 col-sm-6 col-lg-6">
+                              <div class="our-team">
+                                  <div class="pic">
+                                      <img src="https://lh3.googleusercontent.com/fife/AAWUweUXHCWKYBSNwA9ABYrx1AeXoyMCTe5VMqIBMqsToiyBf8tyVNQReFJFZWjF6_t3koHbKPpaH6qZiA6Vthf521L8pOwuxZk1tjaEcIur9X4JbVEsFbICPUHxR3pH-EEhCI8AaP47YmpekfVv2paVi5wQkDKzLQk7K5ewyY68fsGi-Yf5CaK3evruZd5d7bfrbuT0oAbDf0zOZyqXg7hLSQe3xT35gr8zRCmFcipn1Nw9Vi4V3TBLJvxZp5vgmSdJ3ZIb8URXGmfY1TqV7K2JcOrdmyrne-Qii-ZU9gfb4DlyQV9ZlSscjEHbGAct7TAkh50JK5shgjf0J8JQ6Oz1ESFGAFIHu9HAWKVJ7MurC9Aln9P3lFgeRWAgGpYrsnv12opjJy2el94ecNRpOfOsEllOGWeL6yLcQgqSCMNcaBqBjFgNv2Ay0hm8Oaazga1VV9aLE6lSRPldQohYH_HfubMIE0jZHMdBd4okHSPS8k9pkm_mUP1fpZlpK1xPXpzB4H16-xTQ_wPFrBTbIhL6COWeHp0psoeiAP_P_PkuC1uv3t4aDRjdhF9vX-eNBURgzThIcT5TxFXY3rR7N7KbJHK_VLYu4ZfZf95BDpEeil4V8A4Vho5CNj52FIxWoe765BYoZMnaTxGwgfkcjX15kKpepiznVd4BwLM2NKp7xVL-6qP6edjbpF3TwyA_ClTxiGGmJ-OoGXgnJjjBnk96INa8pNXOgQiK2Ps=w400-h380-p-k-nu-ft" width="350" height="200" style='object-fit: contain; width: 100%; height: 100%;'>
+                                  </div>
+                                  <div class="team-content">
+                                      <h3 class="title">Pralayakaveri Chaitanya</h3>
+                                      <span class="post">Coordinator</span>
+                                  </div>
+                                  <ul class="social">
+                                      <!-- <li><a href="" class="fab fa-facebook"></a></li>
+                                      <li><a href="" class="fab fa-instagram"></a></li> -->
+                                  </ul>
+                              </div>
+                          </div>
+                          
+                        </div>
+                    </div>
+                     
+                  
+                          <!-- Section header -->
+    
+                     <!--     <div class="section-header text-center ">
+                            <h2 class="title">SCREEING REQUEST</h2>
+                          </div>    -->
+                          
+                          <!-- /Section header -->
+                  
+                        
+                          <!-- Section-header -->
+                            <div class="section-header text-center get-touch">
+                             <h2 >GET IN TOUCH</h2>
+                            </div>
+                                <!-- /Section-header -->
+                        
+                                <!-- contact -->
+                                <div class="col-sm-12 col-md-12">
+                                  <div class="contact">
+                                    <div class="text-center">
+                                      <a href="https://www.facebook.com/groups/sfsiitkanpur"><i class="fab fa-facebook-f" aria-hidden="true" style="transform: scale(2);"></i></a>
+                                      <h3>Facebook</h3>
+                                      <p>Like and Follow our facebook page for regular updates</p>
+                                    </div>
+                                   
+                                  </div>
+                                </div>
+                                <!-- /contact -->
+                </section>
+              </main>
+          
+        </div>
+          
+        <footer>
+        
+          <div class="row">
+            <div class="col-md-6 col-sm-6 foot-text">
+              Copyright &copy; 2020 All Rights Reserved by MnC Council.
+            </div>
+            <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+          </div>
+          
+        </footer>
+        
+
+    </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/montage.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+    <link rel="stylesheet" href="css/sidnav.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/sidenavMobile.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span id="loader"></span>
+  </div>
+  <div class="part23" style="background-color: #F496BB;">
+    <!-- <img src="img/main.png" alt="" class="aimg"> -->
+  </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler hoverable">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/oat1.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+            <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+            <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+        </div>
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
+        </div>
+      </div>
+  </div> 
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" style="color:#F496BB ;"onclick="closeNav()">&times;</a>
+    <div><a onclick="trans('Galaxy','#e6837e')">GALAXY</a></div>
+    <div><a class="current">FRESHERS</a></div>
+    <div><a onclick="trans('impression','#43ccc7')">IMPRESSIONS</a></div>
+    <div><a onclick="trans('montage','#713d39')">MONTAGE FILM FESTIVAL</a></div>
+    <div><a onclick="trans('interiit','#713d39')">INTER IIT CULTURAL MEET</a></div>
+  </div>
+  
+  <div class="mega">
+    <header class="resize">
+      <img class="img-container" src="img/freshersheader.jpg" >
+    </header>
+    
+    <!-- <nav>
+      <ul class="nav-hover">
+        <li><a onclick="trans('Galaxy','#e6837e')">GALAXY</a></li>
+        <li><a class="current">FRESHERS</a></li>
+        <li><a onclick="trans('impression','#43ccc7')">IMPRESSION</a></li>  
+        <li><a onclick="trans('montage','#713d39')" >MONTAGE FILM FESTIVAL</a></li>
+      </ul>
+    </nav> -->
+
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find all the events here</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li><a onclick="trans('Galaxy','#e6837e')">GALXY</a></li>
+          <li><a class="current">FRESHERS</a></li>
+          <li><a onclick="trans('impression','#43ccc7')">IMPRESSIONS</a></li>  
+          <li><a onclick="trans('montage','#713d39')" >MONTAGE FILM FESTIVAL</a></li>
+          <li><a onclick="trans('interiit','#713d39')">INTER IIT CULTURAL MEET</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sid" style="background-color: #F496BB;">
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+    </div>
+    <main>
+      <section id="section-3">
+        
+      
+        <div class="aboutu-container">
+          <div class="aboutu">
+             
+              <div class="aboutu-info">
+                <h2>FRESHERS</h2>
+                <p>“Every great artist started as an amateur.”<br>
+                  When a person enters a new university or institution, he/she is likely to face a whirlwind of emotions. We at IIT Kanpur completely understand these emotional pangs and aim to help our freshers in the best way possible.<br>
+                  For this, the Media and Cultural Council organises a Freshers’ Night gala within a month of them joining the institute, so as to help them in transforming these negative feelings and emotions into something that is more productive and leads to their erudition.<br>
+                  The Freshers’ Nite also marks the very initial association between the freshers and the club. This event plays a chief role in establishing and uniting the freshers with the clubs that they are interested in. It furnishes a window of opportunity for the freshmen to interact with the sophomores and other seniors to enhance their skills. It provides budding artists with a perfect platform to exhibit their flair. 
+                  The gala event includes performances of all the clubs that come under the council. In fact, it is the freshers themselves who are the charioteers of the event. The Freshers’ Nite provides the perfect opportunity for the new students to feel more confident, and exposure to the various clubs and societies that the council endorses. <br>
+                  The event is highly applauded for the way it aims to blend the freshers with their seniors, and also amongst themselves. It is reviewed to be a highly holistic experience, both by the audience as well as the freshmen. The event is received by a highly enthusiastic audience; and has an astonishingly wide reach
+                  </p>
+           
+              </div>
+          </div>
+      </div> 
+
+                <!-- Section-header -->
+                <div class="section-header text-center get-touch">
+                  <h2 >GET IN TOUCH</h2>
+                </div>
+                <!-- /Section-header -->
+        
+                <!-- contact -->
+              
+                <div class="col-sm-12 col-md-12">
+                    <div class="contact">
+                      <div class="text-center">
+                        <a href="https://www.facebook.com/mnciitk/"><i class="fab fa-facebook" aria-hidden="true" style="transform: scale(1.75);"></i></a>
+                        <h3>Facebook</h3>
+                        <p>Like and Follow our facebook page for regular updates</p>
+                      </div>
+                    </div>
+                  </div>
+          
+  
+      </section>
+      <!-- <i class="fab fa-facebook-f"></i> -->
+    
+    </main>
+  
+    <div class="part13">
+      <!-- <img src="img/main.png" alt="" class="aimg"> -->
+    </div>
+  
+  </div>
+  
+  <footer>
+        
+    <div class="row">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+    
+  </footer>
+
+
+</body>
+</html>
+  

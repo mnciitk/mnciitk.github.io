@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humour House &middot; Media and Cultural Council, IIT Kanpur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/Dance.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/loader.css">
+   
+    <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/sidnav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+
+    <script src="js/sidenavMobile.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span id="loader"></span>
+  </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler hoverable">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/oat1.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+            <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+            <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+        </div>
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
+        </div>
+      </div>
+  </div>
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#FECC47 ;"" >&times;</a>
+    <div><a key='Anime'>Anime Society</a></div>
+    <div><a key='book'>Book Club</a></div>
+    <div><a key='Dance' >Dance Club</a></div>
+    <div><a key='DebSoc'>Debate and Discussion Society</a></div>
+    <div><a key='DNA'>Design And Animation Club</a></div>
+    <div><a key='Dramatics'>Dramatics Club</a></div>  
+    <div><a key='ELS'>English Literary Society</a></div>
+    <div><a key='fac'>Fine Arts Club</a></div>
+    <div><a key='film'>Film Club</a></div>
+    <div><a key="HSS">Hindi Sahitya Sabha</a></div>
+    <div><a key="hh">Humour House</a></div>
+    <div><a key='music'>Music Club</a></div>
+    <div><a key='photo'>Photography Club</a></div>
+    <div><a key='quiz'>Quiz Club</a></div>
+    <div><a key='sfs'>Student Film Society</a></div>
+  </div> 
+  <div class="part23" style="background-color: #FECC47;">
+  </div>
+  <div class="mega">
+    <header class="resize" >
+      <img class="img-header" src="img/cover/hh.jpg" >
+    </header>
+    
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find all the clubs here</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li><a key='Anime'>Anime Society</a></li>
+          <li><a key='book'>Book Club</a></li>
+          <li ><a key='Dance' >Dance Club</a></li>
+          <li><a key='DebSoc'>Debate and Discussion Society</a></li>
+          <li><a key='DNA'>Design And Animation Club</a></li>
+          <li><a key='Dramatics'>Dramatics Club</a></li>
+          <li><a key='ELS'>English Literary Society</a></li>
+          <li><a key='fac'>Fine Arts Club</a></li>
+          <li><a key='film'>Film Club</a></li>
+          <li><a key='HSS'>Hindi Sahitya Sabha</a></li>
+          <li><a key='hh'>Humour House</a></li>
+          <li><a key='music'>Music Club</a></li>
+          <li><a key='photo'>Photography Club</a></li>
+          <li><a key='quiz'>Quiz Club</a></li>         
+          <li><a key='sfs'>Student Film Society</a></li> 
+        </ul>
+      </div>
+    </div>
+    <div class="sid" style="background-color: #FECC47;">  
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+    </div>
+    <main>
+      <section id="section-1">
+        
+      <div class="aboutu-container">
+        <div class="aboutu">
+           
+            <div class="aboutu-info">
+                <h2>ABOUT US</h2>
+                <p>
+                    "Stand-up comedy is an art form, and it dies unless you expand it."<br />
+                    Who isn't familiar with the comics standing before the mad applauding crowd? If you aren't, try visiting a rally. But is mic the most necessary part? Or is it the stage? Or something else? At the Comedy Club of IIT Kanpur (popularly known as "Humour House"), we believe that comedy is not restricted to a particular format or topic or even the geographic boundary of countries. It is the art of cracking up people with a shared sense of humour in a variety of ways. Humour House provides the campus junta with a platform to present their funny self in front of a real audience.
+                    Apart from the standard open mics, we at Humour House explore different genres of comedy like improv comedy, roast, pun, satire, etc. We participate in various national level competitions like Aantaragni, Inter IIT Cultural Meet, etc. 
+                    Several workshops are also conducted that focus on the basics of comic timing, beats, expressions, content writing, etc. <br />
+                    <br />
+                    Are you unfunny? Believe me, even I was BORN CRYING.<br />
+                    There is no prerequisite to join our club, the only thing we want is your "enthu".
+                
+                </p>        
+                
+            </div>
+        </div>
+    </div> 
+          <div class="section-header text-center">
+            <h2>FUTURE EVENTS</h2>
+          </div>
+          
+          <div class="film-container">
+             <div class="divider1">
+                  <div class="list-type5">
+                    <ol>
+                    <li><span><b>Fresher's Mic</b> <br>
+                        An Open mic for freshers to get their hands dirty with the Jokes. </span></li>
+                    <li><span><b>Workshops</b><br>
+                        Our club will organise several workshops on writing, performance, joke delivery, improv and genres of comedy. </span></li> 
+                    <li><span><b>Curated Open Mics</b><br>
+                        Curated open mics to enhance the “Perform →  Get Feedback → Improve” process. </span></li>
+                    <li><span><b>Roast Sessions</b><br>
+                        Several roast sessions will be organised to improve topic-based joke making. </span></li>
+                    </ol>
+                  </div>
+             </div>
+             <div class="divider2">
+                  <div class="list-type6">
+                    <ol start="5">
+                      <li><span><b>Improv Battle</b><br>
+                        Improvisation session to improve your on-spot joke delivery. </span></li>   
+                    </ol>
+                  </div>
+             </div>
+            </div>
+  
+  
+             
+                <!-- Section header -->
+                <div class="section-header text-center section-performance">
+                  <h2>GALLERY</h2>
+               </div>
+                <!-- /Section header -->
+        
+                <!-- /blog -->
+              <div class="video-container">
+               <div class="row">
+  
+                  <div class="column">
+                    <div>
+                      <iframe width="380" height="300" src="https://www.facebook.com/humourhouseiitk/videos/550580689429544" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p font size = "4" color = "white">Featured Video</p>
+                  </div>
+  
+                  <div class="column" >
+                    <div>
+                      <iframe width="380" height="300" src="https://www.facebook.com/humourhouseiitk/videos/992152701273167" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                     <p font size = "4" color = "white">Pun Battle</p>
+                    </div>
+                  </div>
+              </div>
+              
+                
+  
+         
+         <div class="section-header text-center section-team">
+            <h2>MEET THE TEAM</h2>
+         </div>
+            
+            <div class="container">
+              <div class="row ">
+                  <div class="col-md-6 col-sm-6 col-lg-4">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/arush.jpg" width="380" height="300" style="object-fit: cover;">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Arush Kumar Singh</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/arush.kumarsingh.96/" class="fab fa-facebook"></a></li>
+                              
+                              <li><a href="https://www.instagram.com/arush.kumar.singh/" class="fab fa-instagram"></a></li>
+                            
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="img/Coordie pics/ghanshyam.jpeg" >
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Ghanshyam</h3>
+                            <span class="post">Coordinator</span>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/Ghanshyam2505" class="fab fa-facebook"></a></li>
+                            
+                            <li><a href="https://www.instagram.com/ghanshyamw__/" class="fab fa-instagram"></a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                
+                  <div class="col-md-6 col-sm-6 col-lg-4">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/devang.jpg" width="380" height="300" style="object-fit: cover;">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Devang Uniyal</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/devang.uniyal" class="fab fa-facebook"></a></li>
+                              
+                              <li><a href="https://www.instagram.com/devang_2010/" class="fab fa-instagram"></a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+  
+                  
+              </div>
+          </div>  
+                 
+        
+  
+                <!-- Section-header -->
+                <div class="section-header text-center get-touch">
+                  <h2 >GET IN TOUCH</h2>
+                </div>
+                <!-- /Section-header -->
+        
+                <!-- contact -->
+              
+              <div class="row">
+  
+                <div class="column-contact">
+                <div class="col-sm-12 col-md-10">
+                  
+                     <div class="text-center">
+                      <a href="https://www.facebook.com/humourhouseiitk/"><i class="fab fa-facebook-f" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Facebook</h3>
+                      <p>Like and Follow our facebook page for regular updates</p>
+                     </div>
+                  
+                  </div>
+                </div> 
+  
+                <div class="column-contact">
+                <div class="col-sm-12 col-md-10">
+                 
+                    <div class="text-center">
+                      <a href="https://www.instagram.com/humourhouseiitk/"><i class="fab fa-instagram" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Instagram</h3>
+                      <p>Follus us on Instagram</p>
+                    </div>
+                  
+                  </div>
+                </div> 
+  
+                <div class="column-contact">
+                <div class="col-sm-12 col-md-10">
+                  
+                      <div class="text-center">
+                      <a href="https://www.youtube.com/channel/UCX5HZJWE7c3k3aiWrbo-MMw/featured"><i class="fab fa-youtube" aria-hidden="true" style="transform: scale(2);""></i></a>
+                      <h3>Youtube</h3>
+                      <p>Subscribe The Official Channel Of The Club For Videos Of Our Productions.</p>
+                      </div>
+                 
+                  </div>
+                </div>
+              </div> 
+          
+  
+      </section>
+    
+    </main>
+  
+  </div>
+  
+  <footer>
+        
+    <div class="row">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+    
+  </footer>
+
+
+</body>
+</html>
+  

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Animation Club &middot; Media and Cultural Council, IIT Kanpur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/DNA.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/sidnav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+
+    <script src="js/sidenavMobile.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="js/events.js"></script>
+    <!-- <script src="js/club.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span id="loader"></span>
+  </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler hoverable">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/oat1.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+            <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+            <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+        </div>
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
+        </div>
+      </div>
+  </div>
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#F296BB ;" >&times;</a>
+    <div><a key='Anime'>Anime Society</a></div>
+    <div><a key='book'>Book Club</a></div>
+    <div><a key='Dance' >Dance Club</a></div>
+    <div><a key='DebSoc'>Debate and Discussion Society</a></div>
+    <div><a key='DNA'>Design And Animation Club</a></div>
+    <div><a key='Dramatics'>Dramatics Club</a></div>  
+    <div><a key='ELS'>English Literary Society</a></div>
+    <div><a key='fac'>Fine Arts Club</a></div>
+    <div><a key='film'>Film Club</a></div>
+    <div><a key="HSS">Hindi Sahitya Sabha</a></div>
+    <div><a key="hh">Humour House</a></div>
+    <div><a key='music'>Music Club</a></div>
+    <div><a key='photo'>Photography Club</a></div>
+    <div><a key='quiz'>Quiz Club</a></div>
+    <div><a key='sfs'>Student Film Society</a></div>
+  </div> 
+  <div class="part23" style="background-color: #F296BB;">
+    <!-- <img src="img/main.png" alt="" class="aimg"> -->
+  </div>
+  <div class="mega">
+    <header class="resize" >
+      <img class="img-header" src="img/cover/dna.jpg" >
+    </header>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find all the clubs here</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li><a key='Anime'>Anime Society</a></li>
+          <li><a key='book'>Book Club</a></li>
+          <li ><a key='Dance' >Dance Club</a></li>
+          <li><a key='DebSoc'>Debate and Discussion Society</a></li>
+          <li><a key='DNA'>Design And Animation Club</a></li>
+          <li><a key='Dramatics'>Dramatics Club</a></li>
+          <li><a key='ELS'>English Literary Society</a></li>
+          <li><a key='fac'>Fine Arts Club</a></li>
+          <li><a key='film'>Film Club</a></li>
+          <li><a key='HSS'>Hindi Sahitya Sabha</a></li>
+          <li><a key='hh'>Humour House</a></li>
+          <li><a key='music'>Music Club</a></li>
+          <li><a key='photo'>Photography Club</a></li>
+          <li><a key='quiz'>Quiz Club</a></li>         
+          <li><a key='sfs'>Student Film Society</a></li> 
+       
+        </ul>
+      </div>
+    </div>
+    <div class="sid" style="background-color: #F296BB;">  
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+    </div>
+    <main>
+      <section id="section-5">
+        
+         <div class="aboutu-container">
+          <div class="aboutu">
+             
+              <div class="aboutu-info">
+                  <h2>ABOUT US</h2>
+                  <p>Introduction - “This is how we define ourselves”<br>
+                    Design and Animation Club is a place where all the design and animation enthusiasts can meet and exchange their crazy artistic ideas.
+                        
+                A place to practice state of the art design and animation techniques where people can explore their artistry. 
+                        
+                    A place to call 'home' for our fellow designers and animators. And a place to exercise creativity without any bounds, where we get praised and understood for even our little but commendable efforts.<br>
+                    
+                    Vision - “Practising Design for the Art of it.”<br>
+                    We will consistently learn design and animation software and use them to manifest our imagination. And organize workshops, provide projects, and a climatic exhibition for showcasing all the work completed during our tenure.
+                   </p>
+                  
+              </div>
+          </div>
+      </div> 
+  
+          <div class="section-header text-center">
+            <h2>RECENTS EVENTS</h2>
+          </div>
+          
+         
+             <div class="divider1">
+                  <!--<li>Harry Potter trivia quiz for freshers (freshers� week).</li>
+                  <li>Orthodox or Cinematic (January second week).</li>
+                  <li>Ha Me (along with Know Your Genre).</li> -->
+                  <div class="list-type5">
+                    <ol>
+                      <li><span>Freshers</span></li>
+                      <li><span>Logo Making Workshop</span></li>
+                      <li><span>Summer Workshop</span></li>
+                    </ol>
+                  </div>
+             </div>
+             <div class="divider2">
+               <!--   <li>Know Your Genre (October in line with Odyssey).</li>
+                  <li>Crypto Crossword (September first week).</li>
+                  <li>Comic Without Text (Galaxy).</li> -->
+                  <div class="list-type6">
+                    <ol start="4">
+                      <li><span>Galaxy</span></li>
+                      <li><span>Poster Making Workshop </span></li>
+                      <li><span>Winter Workshop</span></li>
+                    </ol>
+                  </div>
+             </div>
+          
+         
+             <div class="section-header text-center section-performance">
+              <h2>DESIGN COLLECTION</h2>
+           </div>
+            <!-- /Section header -->
+    
+            <!-- /blog -->
+          <div class="img-container">
+           <div class="row design-collection">
+              <div class="col-md-4 col-sm-6 dna-design" >
+                <div>
+                  <img class="images" src="img/dna1.jpg" alt="">
+                </div> 
+              </div>
+  
+              <div class="col-md-4 col-sm-6 dna-design" >
+                <div>
+                  <img class="images" src="img/dna2.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6 " >
+                <div>
+                  <img class="images" src="img/dna3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          
+            <div class="row design-collection">
+              <div class="col-md-4 col-sm-6 dna-design">
+                <div>
+                  <img class="images" src="img/dna4.jpg" alt="">
+                </div>
+              </div>
+           
+              <div class="col-md-4 col-sm-6 dna-design" >
+                <div>
+                  <img class="images" src="img/dna5.jpg" alt="">
+                </div>
+              </div>
+  
+              <div class="col-md-4 col-sm-6">
+                <div>
+                  <img class="images" src="img/dna6.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+         
+       
+  
+         <div class="section-header text-center section-team">
+            <h2>MEET THE TEAM</h2>
+         </div>
+            
+            <div class="container">
+              <div class="row "> 
+                  <div class="col-md-6 col-sm-6 col-lg-4">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/Ishan Patel.jpg">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Ishan Patel</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/profile.php?id=100068961173548" class="fab fa-facebook"></a></li>
+                              
+                              <li><a href="https://www.instagram.com/ishu.pdf?r=nametag" class="fab fa-instagram"></a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="img/Coordie pics/Keshav Maheshwari .jpg"  width="350" height="200">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Keshav Maheshwari </h3>
+                            <span class="post">Coordinator</span>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/keshav.maheshwari.33821" class="fab fa-facebook"></a></li>
+    
+                            <li><a href="https://www.instagram.com/_.keshavvv._/" class="fab fa-instagram"></a></li>
+                
+                        </ul>
+                    </div>
+                </div>
+                
+                  <div class="col-md-6 col-sm-6 col-lg-4">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/Amartya Shekhar Das.jpg">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Amartya Shekhar Das</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/amartyasdas22/" class="fab fa-facebook"></a></li>
+                              
+                              <li><a href="https://www.instagram.com/amartya_s_das" class="fab fa-instagram"></a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+  
+  
+              </div>
+          </div>  
+                 
+        
+                <!-- Section header -->
+               
+  
+                <!-- Section-header -->
+                <div class="section-header text-center get-touch">
+                  <h2 >GET IN TOUCH</h2>
+                </div>
+                <!-- /Section-header -->
+        
+                <!-- contact -->
+              
+              <div class="row">
+  
+                <div class="column-contact">
+                <div class="col-sm-12 col-md-10">
+                  
+                     <div class="text-center">
+                      <a href="https://www.facebook.com/pg/dnaiitk/"><i class="fab fa-facebook-f" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Facebook</h3>
+                      <p>Like and Follow our facebook page for regular updates</p>
+                     </div>
+                  
+                  </div>
+                </div> 
+  
+                <div class="column-contact">
+                <div class="col-sm-12 col-md-10">
+                 
+                    <div class="text-center">
+                      <a href="https://www.instagram.com/dnaiitk/"><i class="fab fa-instagram" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Instagram</h3>
+                      <p>Follow us on Instagram</p>
+                    </div>
+                  
+                  </div>
+                </div> 
+  
+              </div> 
+          
+  
+      </section>
+      <!-- <i class="fab fa-facebook-f"></i> -->
+    
+    </main>
+  </div>
+  
+
+  <footer>
+        
+    <div class="row">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+    
+  </footer>
+
+
+
+</body>
+</html>
+  

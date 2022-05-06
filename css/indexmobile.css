@@ -1,0 +1,104 @@
+@media screen and (max-width: 500px){
+    body{
+        overflow: visible;
+    }
+    .sec1,.sec2,.sec3,.sec4,.sec5,.sec6{
+        display: block;
+    }
+    .sec2,.sec3,.sec4,.sec5,.sec6{
+        opacity: 0;
+    }
+    .part11,.part21,.part31,.part41,.part51,.part61,.img1,.img2,.img3,.img4,.img4,.img5,.img6{
+        opacity:1;
+    }
+    .sec1{
+        line-height: normal;
+    }
+    .head1{
+        left:0vw;
+        top:50vh;
+        font-size:40px;
+    }
+    .head1 span{
+        line-height: 1.5;
+    }
+    .subhead{
+        letter-spacing: 3.5px;
+    }
+    .img1{
+        margin-top:30vh;
+        transform: scale(1.5);
+    }
+    .part11,.part12,.part21,.part22,.part31,.part32,.part41,.part42,.part51,.part52,.part61,.part62{
+        width: 100vw;
+        height:50vh;
+        display: block;
+    }
+    .part22,.part32,.part42,.part52,.part62{
+        border-radius: 50px;
+    }
+
+    .img2,.img3,.img4,.img5,.img6{
+        position: relative;
+        width:60vw;
+        top: 10%;
+        left:20%;
+        /* left:-40px; */
+        /* right:0vw; */
+      }
+      
+
+    .content2,.content3,.content4,.content5,.content6{
+    font-size: 16px;
+    }
+    .view2,.view3,.view4,.view5,.view6{
+        top:0vh;
+        left: 0vw;
+    }
+    .btn{
+        position: relative;
+        top:10vh;
+    }
+   .sidenav{
+       display:none;
+   }
+   .part13,.part23,.part33,.part43,.part53,.part63{
+       z-index: 2000;
+   }
+   .pen-container{
+    margin:0;
+    padding: 10vh 4vw;
+    max-width: none;
+    }
+    #facebook,#googleplus,#instagram{
+        margin:10px;
+    }
+  .pen-container button{
+      transform: scale(0.95);
+  }
+  .head2,.head3,.head4,.head5,.head6{
+    opacity: 0;
+}
+.content2,.content3,.content4,.content5,.content6,.view2,.view3,.view4,.view5,.view6{
+    opacity: 0;
+}
+.part22,.part32,.part42,.part52,.part62,.img2,.img3,.img4,.img5,.img6{
+    opacity: 0;
+}
+}
+@media screen and (max-width: 350px){
+    .head2,.head3,.head4,.head5,.head6{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width:1024px){
+    .img1{
+        margin-top:30vh;
+        transform: scale(1);
+    }
+    .head1{
+        left:0vw;
+        top:55vh;
+        font-size:40px;
+    }
+}

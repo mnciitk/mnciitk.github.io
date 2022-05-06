@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Literary Society &middot; Media and Cultural Council, IIT Kanpur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/DNA.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/sidnav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+
+    <script src="js/sidenavMobile.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span id="loader"></span>
+  </div>
+  <div class="part23" style="background-color: #B1FF3A;">
+    <!-- <img src="img/main.png" alt="" class="aimg"> -->
+  </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler hoverable">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/oat1.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+            <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+            <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+        </div> 
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
+        </div>
+      </div>
+  </div>
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#B1FF3A ;" >&times;</a>
+    <div><a key='Anime'>Anime Society</a></div>
+    <div><a key='book'>Book Club</a></div>
+    <div><a key='Dance' >Dance Club</a></div>
+    <div><a key='DebSoc'>Debate and Discussion Society</a></div>
+    <div><a key='DNA'>Design And Animation Club</a></div>
+    <div><a key='Dramatics'>Dramatics Club</a></div>  
+    <div><a key='ELS'>English Literary Society</a></div>
+    <div><a key='fac'>Fine Arts Club</a></div>
+    <div><a key='film'>Film Club</a></div>
+    <div><a key="HSS">Hindi Sahitya Sabha</a></div>
+    <div><a key="hh">Humour House</a></div>
+    <div><a key='music'>Music Club</a></div>
+    <div><a key='photo'>Photography Club</a></div>
+    <div><a key='quiz'>Quiz Club</a></div>
+    <div><a key='sfs'>Student Film Society</a></div>
+  </div> 
+  <div class="mega">
+    <header class="resize" >
+      <img class="img-header" src="img/cover/els.jpg" >
+    </header>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find all the clubs here</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li><a key='Anime'>Anime Society</a></li>
+          <li><a key='book'>Book Club</a></li>
+          <li ><a key='Dance' >Dance Club</a></li>
+          <li><a key='DebSoc'>Debate and Discussion Society</a></li>
+          <li><a key='DNA'>Design And Animation Club</a></li>
+          <li><a key='Dramatics'>Dramatics Club</a></li>
+          <li><a key='ELS'>English Literary Society</a></li>
+          <li><a key='fac'>Fine Arts Club</a></li>
+          <li><a key='film'>Film Club</a></li>
+          <li><a key='HSS'>Hindi Sahitya Sabha</a></li>
+          <li><a key='hh'>Humour House</a></li>
+          <li><a key='music'>Music Club</a></li>
+          <li><a key='photo'>Photography Club</a></li>
+          <li><a key='quiz'>Quiz Club</a></li>         
+          <li><a key='sfs'>Student Film Society</a></li> 
+    
+        </ul>
+      </div>
+    </div>
+    <div class="sid" style="background-color: #B1FF3A;">  
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+    </div>
+    <main>
+      <section id="section-10">
+
+          <div class="aboutu-container">
+            <div class="aboutu">
+               
+                <div class="aboutu-info">
+                    <h2>ABOUT US</h2>
+                    <p>“English language is a strange paradise. It’s where the fishes fly and the sparrows swim.”<br>
+                      The English Literary Society is a group of people who are bonded mainly, but not exclusively, by their love for English language and literature. The club’s environment comprises discussions set in the world of literature and provides a space where you are free to talk about the most bizarre ideas and curiosities that pop-up in your mind.<br>
+                      We at the ELS explore new methods for writing and perform at poetry slams. TV shows, novels, films, puns, cryptic crosswords: name your interest, and you will find like-minded people here.<br>
+                      Events like DumbC (our fun twist on charades) and Just-A-Minute ( Jammers, anyone?) are pure laughter and an exhibit for some serious talent. Word Games are an assortment of obsessive puzzles and sneaky humour based on the idiosyncrasies of the English language. We also organise the fresher's Treasure Hunt every year: a rite you don't want to miss.<br>
+                      Once in ELS, always in ELS. With all that said, in ELS you will find a welcoming, closely-knitted group of friends unimpeded by batch (or any!) differences. Looking forward to having fun with you!                      
+                      </p> 
+                    
+                </div>
+            </div>
+        </div> 
+  
+          <div class="section-header text-center">
+            <h2>OUR EVENTS</h2>
+          </div>
+          
+         
+             <div class="divider1">
+                  <!--<li>Harry Potter trivia quiz for freshers (freshers� week).</li>
+                  <li>Orthodox or Cinematic (January second week).</li>
+                  <li>Ha Me (along with Know Your Genre).</li> -->
+                  <div class="list-type5">
+                    <ol>
+                    <li><span><b>Creative Writing</b> <br>
+                      It's THE event to test and improve your writing skills in a plethora of different formats</span> </li>
+                    <li><span><b>Dumb Charades</b><br>
+                      It's what you're thinking, but with a lot more complications, rules and formats. Enough to spark comepetition.</span></li>
+                    <li><span><b>Word Games</b><br>
+                      To test your vocabulary and IQ with various word puzzle formats.</span></li>
+                    </ol>
+                  </div>
+             </div>
+             <div class="divider2">
+               <!--   <li>Know Your Genre (October in line with Odyssey).</li>
+                  <li>Crypto Crossword (September first week).</li>
+                  <li>Comic Without Text (Galaxy).</li> -->
+                  <div class="list-type6">
+                    <ol start="4">
+                      <li><span><b>Open Mic </b><br>
+                          Bring out the performer in you through prose, verse or whatever else you feel like .</span> </li>
+                      <li><span><b>Just A Minute(JAM!)</b><br>
+                          Think you can speak for a minute without interruption? Think again.</span></li>    
+                      <li><span><b>Literary Discussions</b><br>
+                          Read or wrote something interesting? Want to discuss it with a group of literature-passionate people? We're here.</span></li>
+                    </ol>
+                  </div>
+             </div>
+          
+  
+  
+             
+                <!-- Section header -->
+                <div class="section-header text-center section-performance-els">
+                  <h2>RECENT EVENTS</h2>
+               </div>
+                <!-- /Section header -->
+        
+                <!-- /blog -->
+              <div class="video-container">
+               <div class="row">
+  
+                  <div class="col-md-4 col-sm-4" >
+                    <div>
+                     <img class="img-blog" src="img/oceans.png" alt="">
+                  </div>
+                  <p font size = "4" color = "white">
+                      <i class="fa fa-user" style="color:black"></i>Riya James<br>
+                      <i class="fa fa-calendar" style="color:black"></i>January 2019<br>
+                      <a href="https://elsiitk.wordpress.com/2019/01/27/oceans-rise-empires-fall/">  Read more</a>
+                    </p>
+                    </div>
+                  
+                  <div class="col-md-4 col-sm-4" >
+                      <div>
+                          <img class="img-blog" src="img/midweek.png" alt="">
+                    </div>
+                    <p font size = "4" color = "white">
+                      <i class="fa fa-user" style="color:black"></i> Siddhant Thakur<br>
+                      <i class="fa fa-calendar" style="color:black"></i> December 2018<br>
+                      <a href="https://elsiitk.wordpress.com/2018/12/01/mid-week-musings/">  Read more</a>
+                    </p>
+                    </div>
+              
+                  <div class="col-md-4 col-sm-4" >
+                    <div>
+                      <img class="img-blog" src="img/theking.png" alt="">
+                  </div>
+                     <p font size = "4" color = "white">
+                      <i class="fa fa-user" style="color:black"></i> Shubhi Verma<br>
+                      <i class="fa fa-calendar" style="color:black"></i> October 2018<br>
+                      <a href="https://elsiitk.wordpress.com/2018/10/30/the-king-of-pandemonium/">  Read more</a>
+                     </p>
+                    </div>
+                </div>
+              
+                <div class="row">
+                  <div class="column" >
+                    <div>
+                      <iframe height="300" width ="380" src="https://www.youtube.com/embed/SqLxGSJCq-M" allowfullscreen></iframe>
+                    </div>
+                  <p font size = "4" color = "white">ELS Open Mic</p>
+                  </div>
+  
+                  <div class="column">
+                    <div>
+                      <iframe src="https://www.youtube.com/embed/r4XR4F9YUVI" width ="380" height="300" allowfullscreen></iframe>
+                  </div>
+                  <p font size = "4" color = "white">ELS Open Mic </p>
+                  </div>
+                </div>
+               
+              </div>
+  
+         
+         <div class="section-header text-center section-team">
+            <h2>MEET THE TEAM</h2>
+         </div>
+            
+            <div class="container">
+              <div class="row ">
+                  <div class="col-md-3 col-sm-6">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/Aayush.jpg" width="380" height="300">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Aayush</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/aayush.priyadarshi.180" class="fab fa-facebook"></a></li>
+                              
+                              <li><a href="https://www.instagram.com/aayush.priyadarshi/" class="fab fa-instagram"></a></li>
+                             
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="img/Coordie pics/Abhimanyu Sethia .jpg" >
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Abhimanyu Sethia </h3>
+                            <span class="post">Coordinator</span>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/abhimanyusethia12" class="fab fa-facebook"></a></li>
+                            
+                            <li><a href="https://www.instagram.com/abhimanyusethia12/" class="fab fa-instagram"></a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/Aryan Pandeya.jpg" width="350" height="250">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Aryan Pandeya </h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/aryan.pandeya/" class="fab fa-facebook"></a></li>
+                             
+                              <li><a href="https://www.instagram.com/aryan_pandeya/" class="fab fa-instagram"></a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/Gaurvika Kapoor .jpg" width="380" height="300">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Gaurvika Kapoor </h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="hhttps://www.facebook.com/gaurvika.kapoor.5" class="fab fa-facebook"></a></li>
+                              <li><a href="https://www.instagram.com/_gaurvika_/" class="fab fa-instagram"></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>  
+                 
+        
+  
+                <!-- Section-header -->
+                <div class="section-header text-center get-touch">
+                  <h2 >GET IN TOUCH</h2>
+                </div>
+                <!-- /Section-header -->
+        
+                <!-- contact -->
+              
+              <div class="row">
+  
+                <div class="column-contact-els">
+                <div class="col-sm-12 col-md-10">
+                  
+                     <div class="text-center">
+                      <a href="https://www.facebook.com/elsiitk/"><i class="fab fa-facebook-f" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Facebook</h3>
+                      <p>Like and Follow our facebook page for regular updates</p>
+                     </div>
+                  
+                  </div>
+                </div> 
+  
+                <div class="column-contact-els">
+                <div class="col-sm-12 col-md-10">
+                 
+                    <div class="text-center">
+                      <a href="https://www.elsiitk.wordpress.com"><i class="fab fa-wordpress" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>WordPress Blog</h3>
+                      <p>Know more about us</p>
+                    </div>
+                  
+                  </div>
+                </div> 
+  
+                <div class="column-contact-els">
+                <div class="col-sm-12 col-md-10">
+                  
+                  <div class="text-center">
+                    <a href="https://www.instagram.com/elsiitk/"><i class="fab fa-instagram" aria-hidden="true" style="transform: scale(2);"></i></a>
+                    <h3>Instagram</h3>
+                    <p>Follow our instagram page for regular updates</p>
+                  </div>
+                 
+                  </div>
+                </div>
+              </div> 
+          
+  
+      </section>
+      <!-- <i class="fab fa-facebook-f"></i> -->
+    
+    </main>
+  
+  </div>
+  
+  <footer>
+        
+    <div class="row">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+    
+  </footer>
+
+
+</body>
+</html>
+  

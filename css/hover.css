@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:700);
+
+body,html {
+    margin: 0;
+    background: #fff;
+  }
+  ul {  
+    padding: 0; 
+    list-style: none; 
+    display: block;
+  }
+  .nav-hover li { 
+    display: block; 
+    position: relative; 
+    padding: 5px 0;
+    margin: 0 20px;
+    
+  }
+  a {
+    color: #000;
+    
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 10px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+  

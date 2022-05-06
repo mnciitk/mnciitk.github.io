@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montage &middot; Media and Cultural Council, IIT Kanpur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/DNA.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+    <link rel="stylesheet" href="css/sidnav.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/sidenavMobile.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span id="loader"></span>
+  </div>
+  <div class="part23" style="background-color: #FFD6BA;">
+    <!-- <img src="img/main.png" alt="" class="aimg"> -->
+  </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler hoverable">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/oat1.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+            <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+            <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+        </div> 
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
+        </div>
+      </div>
+  </div> 
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" style="color:#FFD6BA ;"onclick="closeNav()">&times;</a>
+    <div><a onclick="trans('Galaxy','#e6837e')">GALAXY</a></div>
+    <div><a onclick="trans('Freshers','#227d1f')">FRESHERS</a></div>
+    <div><a onclick="trans('impression','#43ccc7')">IMPRESSIONS</a></div>
+    <div><a class="current">MONTAGE FILM FESTIVAL</a></div>
+    <div><a onclick="trans('interiit','#713d39')">INTER IIT CULTURAL MEET</a></div>
+  </div>
+  
+  <div class="mega">
+    <header class="resize">
+      <img class="img-header" src="img/montageheader.jpg" >
+    </header>
+    
+    <!-- <nav>
+      <ul class="nav-hover">
+        <li><a onclick="trans('Galaxy','#e6837e')">GALAXY</a></li>
+        <li><a onclick="trans('Freshers','#227d1f')">FRESHERS</a></li>
+        <li><a  onclick="trans('impression','#43ccc7')">IMPRESSION</a></li>  
+        <li><a class="current" >MONTAGE FILM FESTIVAL</a></li>
+      </ul >
+    </nav> -->
+
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find all the events here</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li><a onclick="trans('Galaxy','#e6837e')">GALXY</a></li>
+          <li><a onclick="trans('Freshers','#227d1f')">FRESHERS</a></li>
+          <li><a  onclick="trans('impression','#43ccc7')">IMPRESSIONS</a></li>  
+          <li><a class="current" >MONTAGE FILM FESTIVAL</a></li>
+          <li><a onclick="trans('interiit','#713d39')">INTER IIT CULTURAL MEET</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sid" style="background-color: #FFD6BA;">
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+    </div>
+    <main>
+      <section id="section-3">
+      
+        <div class="aboutu-container">
+          <div class="aboutu">
+             
+              <div class="aboutu-info">
+                <h2>MONTAGE FILM FESTIVAL</h2>
+                <p>"Art is an effort to create, beside a real world, a more humane world."<br>
+                  Films, photography, arts and literature are all about capturing the essence of human lives. They expand our horizons of thinking- introducing us to a whole new world which we had never imagined before and giving us a truthful reflection of our own selves. Montage- the festival that cherishes films, photography, literature and arts; is one of the most illustrious events that are organized by the Media and Cultural council. The cultural festival, Montage, is not just a celebration, but an experience. One of the Council’s major achievements this year has been the remarkable execution and conduction of the cultural event Montage. This year, Montage had just as buoyant a theme as its vision was. It won’t be wrong to say that the theme was pretty jazzy- “Kaleidoscope”.<br><br>
+                  At Montage, it’s believed that the arts, literature and photographs that we revere, are a reflection of our own lives. Montage is about storytelling- from fictional tales to real-life accounts of real people. It is all about celebrating the arts and there is no better way to celebrate arts than celebrating the great artists and the people who produce those arts.<br><br>
+                  The festival aims to not only broaden and enhance the way the audience views the various arts; but also introduce them to the wonders of artistic media. Apart from showcasing some of the Indian Cinema, a major feature of the festival is the informal discussions by some of the most talented personalities of the Indian films and media industry. These discussions are meant to provide the audience with an insider’s perspective towards the formal arts; that would help them to appreciate and understand as to why the arts are an important part of our lives.<br><br>
+                  Montage features a large number of movie screenings of various genres, which never fail to garner an enthusiastic audience and critics. The book fairs organized under Montage gathered good reviews and were applauded for their extensive collection. Kavi Sammelan event received a huge audience, most of them being classical Hindi enthusiasts. We also organized lectures and workshops by various Featured artists who magnificently passed on their artistic rigour and experiences to their audience.
+                  </p> 
+              </div>
+          </div>
+      </div> 
+
+      <div class="section-header text-center section-performance">
+        <h2>GALLERY</h2>
+     </div>
+      <!-- /Section header -->
+
+      <!-- /blog -->
+    <div class="img-container">
+    
+        
+      <div class="row">
+        <div class="column" >
+          <div class="frame">
+          <div>
+            <img class="image-frame" src="img/montage/Montage_1.jpg" >
+        </div>
+        </div>
+        </div>
+
+        <div class="column">
+          <div class="frame">
+          <div>
+            <img class="image-frame" src="img/montage/Montage_2.jpg" >
+        </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="column" >
+          <div class="frame">
+            <div>
+              <img class="image-frame" src="img/montage/Montage_3.jpg">
+          </div>
+          </div>
+        </div>
+
+          <div class="column">
+            <div class="frame">
+            <div>
+              <img class="image-frame" src="img/montage/Montage_4.jpg">
+          </div>
+          </div>
+      </div>
+    </div>                      
+  <div class="row">
+    <div class="column" >
+      <div class="frame">
+        <div>
+          <img class="image-frame" src="img/montage/Montage_5.jpg">
+      </div>
+      </div>
+    </div>
+
+      <div class="column">
+        <div class="frame">
+        <div>
+          <img class="image-frame" src="img/montage/Montage_6.jpg">
+      </div>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <div class="frame">
+    <div>
+      <img class="image-frame" src="img/montage/Montage_7.jpg">
+  </div>
+  </div>
+  </div>
+
+  <div class="column">
+    <div class="frame">
+    <div>
+      <img class="image-frame" src="img/montage/Montage_8.jpg">
+  </div>
+  </div>
+</div>
+</div>
+
+ </div>
+                <!-- Section-header -->
+                <div class="section-header text-center get-touch">
+                  <h2 >GET IN TOUCH</h2>
+                </div>
+                <!-- /Section-header -->
+        
+                <!-- contact -->
+              
+                <div class="col-sm-12 col-md-12">
+                    <div class="contact">
+                      <div class="text-center">
+                        <a href="https://www.facebook.com/mnciitk/"><i class="fab fa-facebook" aria-hidden="true" style="transform: scale(1.75);"></i></a>
+                        <h3>Facebook</h3>
+                        <p>Like and Follow our facebook page for regular updates</p>
+                      </div>
+                    </div>
+                  </div>
+          
+  
+      </section>
+      <!-- <i class="fab fa-facebook-f"></i> -->
+    
+    </main>
+  
+    <div class="part13">
+      <!-- <img src="img/main.png" alt="" class="aimg"> -->
+    </div>
+  
+  </div>
+  
+  <footer>
+        
+    <div class="row">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+    
+  </footer>
+
+
+</body>
+</html>
+  

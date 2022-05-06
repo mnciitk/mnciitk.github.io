@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Society &middot; Media and Cultural Council, IIT Kanpur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/DNA.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+    <script src="js/sidenavMobile.js"></script>
+    <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sidnav.css">
+    <script src="js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span id="loader"></span>
+  </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler hoverable">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/oat1.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+            <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+            <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+        </div>
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
+        </div>
+      </div>
+  </div>
+  
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#DAAB65 ;"" >&times;</a>
+    <div><a key='Anime'>Anime Society</a></div>
+    <div><a key='book'>Book Club</a></div>
+    <div><a key='Dance' >Dance Club</a></div>
+    <div><a key='DebSoc'>Debate and Discussion Society</a></div>
+    <div><a key='DNA'>Design And Animation Club</a></div>
+    <div><a key='Dramatics'>Dramatics Club</a></div>  
+    <div><a key='ELS'>English Literary Society</a></div>
+    <div><a key='fac'>Fine Arts Club</a></div>
+    <div><a key='film'>Film Club</a></div>
+    <div><a key="HSS">Hindi Sahitya Sabha</a></div>
+    <div><a key="hh">Humour House</a></div>
+    <div><a key='music'>Music Club</a></div>
+    <div><a key='photo'>Photography Club</a></div>
+    <div><a key='quiz'>Quiz Club</a></div>
+    <div><a key='sfs'>Student Film Society</a></div>
+  </div>
+  <div class="part23" style="background-color: #DAAB65;">
+    <!-- <img src="img/main.png" alt="" class="aimg"> -->
+  </div>
+  <div class="mega">
+    <header class="resize" >
+      <img class="img-header" src="img/cover/anisoc.jpg" >
+    </header>
+    
+  
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find all the clubs here</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li><a key='Anime'>Anime Society</a></li>
+          <li><a key='book'>Book Club</a></li>
+          <li ><a key='Dance' >Dance Club</a></li>
+          <li><a key='DebSoc'>Debate and Discussion Society</a></li>
+          <li><a key='DNA'>Design And Animation Club</a></li>
+          <li><a key='Dramatics'>Dramatics Club</a></li>
+          <li><a key='ELS'>English Literary Society</a></li>
+          <li><a key='fac'>Fine Arts Club</a></li>
+          <li><a key='film'>Film Club</a></li>
+          <li><a key='HSS'>Hindi Sahitya Sabha</a></li>
+          <li><a key='hh'>Humour House</a></li>
+          <li><a key='music'>Music Club</a></li>
+          <li><a key='photo'>Photography Club</a></li>
+          <li><a key='quiz'>Quiz Club</a></li>         
+          <li><a key='sfs'>Student Film Society</a></li> 
+        </ul>
+      </div>
+    </div>
+    <div class="sid" style="background-color: #DAAB65;">  
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+    </div>
+    <main>
+      <section id="section-10">
+       
+          <div class="aboutu-container">
+            <div class="aboutu">
+               
+                <div class="aboutu-info">
+                    <h2>ABOUT US</h2>
+                    <p>“Making cartoons means very hard work at every step of the way, but creating a successful cartoon character is the hardest work of all.”<br>
+                      Loved watching cartoons as a kid? Want something similar, but with interesting and diverse stories, amazing music, and fluid animation? Look no further, anime is what you are looking for! Be it action, mystery, comedy, magic, science fiction, heart-wrenching emotional roller coasters that will make you weep, or just some simple story to pass the time with- we at the Anime Society have it all! <br>
+                      
+                      Metamorphosed from a hobby group to a fully-sanctioned club in 2019, the Anime Society at IIT Kanpur is a very recent addition to the Media and Cultural council. At the Anime Society of IIT Kanpur, we aim to introduce the campus community to anime and popularise this medium of storytelling. <br>
+                      
+                      The Anime Society conducts activities galore all around the year. We conduct special Anime Screenings, where one can experience the intense battles and stunning visuals on a big screen! We also conduct Anime quizzes (Beware! Our quizzes are not just anime trivia, but also touch upon mythology, history, philosophy, music and even science related to anime!) and discussions. We even organise Anime Cosplay events where the participants become anime characters themselves! The club also organises online events like the Pokémon Showdown Competitions (do you wanna be the very best?), Anime reviews(discussing anime, but slightly more formally), as well as podcasts (may your voice be heard by all).
+                      Already an anime fan? Then you are already a part of the family! Just drop by sometime and we would be happy to discuss your favourite shows, maybe exchange recommendations or listen to your rant about a show you did not like. New to anime? Contact us and we would love to get you started! 
+                      </p>
+                </div>
+            </div>
+        </div> 
+  
+          <div class="section-header text-center">
+            <h2>OUR EVENTS</h2>
+          </div>
+          
+         
+             <div class="divider1">
+                  <!--<li>Harry Potter trivia quiz for freshers (freshers� week).</li>
+                  <li>Orthodox or Cinematic (January second week).</li>
+                  <li>Ha Me (along with Know Your Genre).</li> -->
+                  <div class="list-type5">
+                    <ol>
+                    <li><span><b>Screenings</b><br>
+                      Anime screenings are held regularly in the Open Air Theatre or Lecture Hall Complex. We generally show anime movies and ongoing anime series.</span></li>
+                    <li><span><b>Discussions</b><br>
+                      Anime discussions are held occasionally, both formally and informally. Various aspects such as the cinematography, culture, music, art, philosophy and psychology related to specific or connected anime and mangas are discussed. </span></li>
+                    <li><span><b>VN Playthroughs</b><br>
+                      Visual Novel is an interactive game genre, which originated in Japan, featuring text-based story with narrative style of literature and interactivity aided by static or sprite-based visuals, most often using anime-style art or occasionally live-action stills.</span></li>
+                    </ol>
+                  </div>
+             </div>
+             <div class="divider2">
+               <!--   <li>Know Your Genre (October in line with Odyssey).</li>
+                  <li>Crypto Crossword (September first week).</li>
+                  <li>Comic Without Text (Galaxy).</li> -->
+                  <div class="list-type6">
+                    <ol start="4">
+                      <li><span><b>Quizzes</b><br>
+                          Quizzes testing anime and manga knowledge are held occasionally, especially as a competition between individuals or teams as a form of entertainment.</span></li>
+                      <li><span><b>Cosplay</b><br>
+                          This event is for freshers’ only and is held along with ‘Fashion Show’ organised by the Films and Media Club. In this event, participants display their costumes onstage as a group.</span></li>    
+                      <li><span><b>Pokemon Showdown Tournaments</b><br>
+                          Pokémon is an anime we all grew up watching and loving but many people don’t know about it’s competitive side. We organize tournaments of various kinds on Pokémon Showdown, a free pokémon battle simulator, in which both experienced and new players can participate and enjoy the nostalgia.</span></li>
+                    </ol>
+                  </div>
+             </div>
+          
+  
+  
+             
+                <!-- Section header -->
+                <div class="section-header text-center section-news-anime">
+                  <h2>RECENTS NEWS</h2>
+               </div>
+                <!-- /Section header -->
+        
+                <!-- /blog -->
+              <div class="video-container">
+               <div class="row">
+                  <div class="column" >
+                      <div>
+                          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitk.AniSoc%2Fposts%2F387408175226058&width=500" width="380" height="300" style="border:1px solid black;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="false" allow="encrypted-media"></iframe>
+                      </div>
+                    <p font size = "4" color = "white">#FridayFanArt: Pankaj Kumar</p>
+                    </div>
+    
+                    <div class="column">
+                      <div>
+                          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitk.AniSoc%2Fposts%2F386994591934083&width=500" width="380" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="false" allow="encrypted-media"></iframe>
+                    </div>
+                    <p font size = "4" color = "white">Movie Screening: Colorful </p>
+                    </div>
+                  </div>
+  
+                  <div class="row">
+                      <div class="column" >
+                          <div>
+                              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitk.AniSoc%2Fposts%2F384460705520805&width=500" width="380" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="false" allow="encrypted-media"></iframe>
+                          </div>
+                        <p font size = "4" color = "white">#FridayFanArt: Shubhankar Srivastava</p>
+                        </div>
+        
+                        <div class="column">
+                          <div>
+                              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitk.AniSoc%2Fposts%2F383763798923829&width=500" width="380" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" data-show-text="true"></iframe>
+                        </div>
+                        <p font size = "4" color = "white">Movie Screening: Blue Exorcist  </p>
+                        </div>
+                      </div> 
+                 
+              
+                <div class="row">
+                  <div class="column" >
+                    <div>
+                      <iframe width="380" height="300" src="https://www.youtube.com/embed/S3-xvMFaQ_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  <p font size = "4" color = "white">Fresher’s Night Cosplay IITK Y18</p>
+                  </div>
+  
+                  <div class="column">
+                    <div>
+                      <iframe width="380" height="300" src="https://www.youtube.com/embed/HMWxJuLJqAg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                  <p font size = "4" color = "white">Fresher’s Night Cosplay IITK Y17 </p>
+                  </div>
+                </div>
+               
+              </div>
+  
+         
+              <div class="section-header text-center ">
+                  <h2>GALLERY</h2>
+               </div>
+  
+              <div class="video-container">
+                  <div class="row">
+                     <div class="column" >
+                         <div>
+                          <img src="img/anime3.jpg"  >
+                         </div>
+                       <p font size = "4" color = "white"></p>
+                       </div>
+       
+                       <div class="column">
+                         <div>
+                          <img src="img/anime4.jpg"  >
+                       </div>
+                       <p font size = "4" color = "white"> </p>
+                       </div>
+                     </div>
+     
+                     <div class="row">
+                         <div class="column" >
+                             <div>
+                              <img src="img/anime1.jpg"  >
+                          </div>
+                           <p font size = "4" color = "white"></p>
+                           </div>
+                           
+                           <div class="column">
+                             <div>
+                              <img src="img/anime2.jpg"   >
+                          </div>
+                           <p font size = "4" color = "white"> </p>
+                           </div>
+                         </div> 
+                    
+                 
+                   <div class="row">
+                     <div class="column" >
+                       <div>
+                          <img src="img/anime5.jpg"  >
+                       </div>
+                     <p font size = "4" color = "white"></p>
+                     </div>
+     
+                     <div class="column">
+                       <div>
+                          <img src="img/anime6.jpg" >
+                     </div>
+                     <p font size = "4" color = "white"> </p>
+                     </div>
+                   </div>
+                  
+                 </div>
+  
+  
+         <div class="section-header text-center section-team">
+            <h2>MEET THE TEAM</h2>
+         </div>
+            
+            <div class="container">
+              <div class="row ">
+                  <div class="col-md-6 col-sm-6 col-lg-4">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/Varun Singh.jpg"  width="380" height="300">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Varun Singh</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/profile.php?id=100024837035852" class="fab fa-facebook"></a></li>
+                             
+                              <li><a href="https://www.instagram.com/vs_lelouch.11/" class="fab fa-instagram"></a></li>
+                            
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-6 col-sm-6 col-lg-4">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="img/Coordie pics/Gaurav Kumar.jpg">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Gaurav Kumar</h3>
+                            <span class="post">Coordinator</span>
+                        </div>
+                        <ul class="social">
+                            <li><a href="Gaurav Kumar : Facebook" class="fab fa-facebook"></a></li>
+                            
+                            <li><a href="https://www.instagram.com/grv_011/" class="fab fa-instagram"></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                  <div class="col-md-6 col-sm-6 col-lg-4">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/Lochan Karthick.jpg"  width="300" height="250">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Lochan Karthick</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/loch.kaze" class="fab fa-facebook"></a></li>
+                             
+                              <li><a href="https://www.instagram.com/lo.chan08/" class="fab fa-instagram"></a></li>
+                             
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>  
+                 
+        
+  
+                <!-- Section-header -->
+                <div class="section-header text-center get-touch">
+                  <h2 >GET IN TOUCH</h2>
+                </div>
+                <!-- /Section-header -->
+        
+                <!-- contact -->
+                <div class="column-contact-anime">
+                  <div class="row">
+  
+                
+                <div class="col-sm-12 col-md-2 anime-info">
+                  
+                     <div class="text-center">
+                      <a href="https://www.facebook.com/iitk.AniSoc/"><i class="fab fa-facebook-f" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Facebook</h3>
+                      <p>Like and Follow our facebook page for regular updates</p>
+                     </div>
+                </div> 
+  
+  
+             <!---   <div class="column-contact-anime"> -->
+                <div class="col-sm-12 col-md-3 anime-info">
+                  
+                      <div class="text-center">
+                          <a href="https://www.instagram.com/iitkanisoc/?hl=en"><i class="fab fa-instagram " aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Instagram</h3>
+                      <p>Follus us on Instagram</p>
+                      </div>
+                 
+                </div>
+
+              
+                <div class="col-sm-12 col-md-2 anime-info">
+                  
+                      <div class="text-center">
+                          <a href="https://www.youtube.com/channel/UCco157bpIZkOacYOWNFTejQ"><i class="fab fa-youtube " aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Youtube</h3>
+                      <p>Subscribe The Official Channel Of The Club For Videos Of Our Productions.</p>
+                      </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3 anime-info">
+                  
+                  <div class="text-center">
+                      <a href="https://discord.gg/QUvD6UvSGc"><i class="fab fa-discord" aria-hidden="true" style="transform: scale(2);"></i></a>
+                  <h3>Discord</h3>
+                  <p>Join Our Discord Server</p>
+                  </div>
+                </div>
+               
+                 <div class="col-sm-12 col-md-2 anime-info">
+                          
+                       <div class="text-center">
+                          <a href="https://iitkanisoc.wordpress.com"><img src="img/logo/anime.png" width="17%" height="17%"></a>
+                          <h3>Official Website</h3>
+                          <p>Know more about us</p>
+                        </div> 
+                
+                  </div>
+                </div>
+              </div> 
+          
+  
+      </section>
+      <!-- <i class="fab fa-facebook-f"></i> -->
+    
+    </main>
+  
+  </div>
+  
+  <footer>
+        
+    <div class="row">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+    
+  </footer>
+
+
+</body>
+</html>
+  

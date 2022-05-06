@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy &middot; Media and Cultural Council, IIT Kanpur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/montage.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+    <link rel="stylesheet" href="css/sidnav.css">
+    
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/galaxy_navbar.css">
+    <script src="js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/sidenavMobile.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='js/galaxy.js'></script>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span id="loader"></span>
+  </div>
+  <div class="part23" style="background-color:#A9D7CC;">
+    <!-- <img src="img/main.png" alt="" class="aimg"> -->
+  </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler hoverable">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/oat1.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+            <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+            <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+        </div>
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
+        </div>
+      </div>
+  </div>
+  
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" style="color:#A9D7CC ;"onclick="closeNav()">&times;</a>
+    <div><a class="current">GALAXY</a></div>
+    <div><a onclick="trans('Freshers','#227d1f')">FRESHERS</a></div>
+    <div><a onclick="trans('impression','#43ccc7')">IMPRESSIONS</a></div>
+    <div><a onclick="trans('montage','#713d39')">MONTAGE FILM FESTIVAL</a></div>
+    <div><a onclick="trans('interiit','#713d39')">INTER IIT CULTURAL MEET</a></div>
+  </div>
+  
+  <div class="mega">
+    <header class="resize">
+      <img class="img-container" src="img/galaxyheader.jpg" >
+     <!-- <h1>GALAXY</h1> -->
+    </header>
+    
+    <!-- <nav>
+      <ul  class="nav-hover">
+          <li><a class="current">GALAXY</a></li>
+          <li><a onclick="trans('Freshers','#227d1f')">FRESHERS</a></li>
+          <li><a onclick="trans('impression','#43ccc7')">IMPRESSION</a></li>  
+          <li><a onclick="trans('montage','#713d39')">MONTAGE FILM FESTIVAL</a></li>
+      </ul>
+    </nav> -->
+
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find all the events here</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul >
+          <li><a class="current">GALXY</a></li>
+          <li><a onclick="trans('Freshers','#227d1f')">FRESHERS</a></li>
+          <li><a onclick="trans('impression','#43ccc7')">IMPRESSIONS</a></li>  
+          <li><a onclick="trans('montage','#713d39')">MONTAGE FILM FESTIVAL</a></li>
+          <li><a onclick="trans('interiit','#713d39')">INTER IIT CULTURAL MEET</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sid" style="background-color: #A9D7CC;">
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 2rem;"></i></a>
+    </div>
+    <main>
+      <section id="section-3">
+ 
+        <div class="aboutu-container">
+          <div class="aboutu">
+             
+              <div class="aboutu-info">
+                <h2>GALAXY</h2>
+                <p>"Nothing is as contagious as enthusiasm"<br>
+                  Galaxy is the inter-Hall cultural championship and also one of the flagship events that are organised by the Media and Cultural Council. It is a series of cultural competitions meant to unleash the cultural rigour of the under-graduate students; and is spread (usually) over a period of 5-7 days in the even semester of every academic year. <br>
+                  Galaxy is looked up with a lot of liveliness and enthusiasm on behalf of the undergraduates, who see it as a way to establish the cultural flair of their halls and “prove their worth and dominance” amongst the other halls. Performing their best in the Galaxy is a want for the fresher undergraduates and they fight tooth and nail for all events to ensure that their pools stay the closest to the Galaxy Championship Trophy.<br>
+                  Galaxy conducts a plethora of competitions for all existing clubs and some more miscellaneous events. The proper conduction of the Galaxy events require all Halls-of-Residence to be split into 5 pools: Peshwas, Aryans, Shauryas, Kshatriyas and Nawabs. These pools comprises of all the halls including UGs and PGs in the institute developing a bond and spirit of team work between them. The Pool which has the highest points at the end of the events gets the Galaxy Championship Trophy. Each pool is piloted by a team of people headed by the one known as “Pool Captain” and guide their respective pools
+                  </p>
+              </div>
+          </div>
+      </div> 
+
+     <div class="galaxy-leaderboard">
+      <div class="leaderboard">
+        <h1>
+          <svg class="ico-cup">
+            <use xlink:href="#cup"></use>
+          </svg>
+          Galaxy Leaderboard
+        </h1>
+        <ol>
+          <li>
+          <img class="pic lead1img" > 
+            <mark class="lead1pool"></mark>
+            <small class="lead1point"></small>
+          </li>
+          <li>
+          <img class="pic lead2img" > 
+            <mark class="lead2pool"></mark>
+            <small class="lead2point"></small>
+          </li>
+          <li>
+          <img class="pic lead3img" > 	
+            <mark class="lead3pool"></mark>
+            <small class="lead3point"></small>
+          </li>
+          <li>
+          <img class="pic lead4img" >
+            <mark class="lead4pool"></mark>
+            <small class="lead4point"></small>
+          </li>
+          <li>
+          <img class="pic lead5img" >
+            <mark class="lead5pool"></mark>
+            <small class="lead5point"></small>
+          </li>
+        </ol>
+      </div>
+      
+      
+      <svg style="display: none;">
+        <symbol id="cup" x="0px" y="0px"
+         width="25px" height="26px" viewBox="0 0 25 26" enable-background="new 0 0 25 26" xml:space="preserve">
+      <path fill="#F26856" d="M21.215,1.428c-0.744,0-1.438,0.213-2.024,0.579V0.865c0-0.478-0.394-0.865-0.88-0.865H6.69
+        C6.204,0,5.81,0.387,5.81,0.865v1.142C5.224,1.641,4.53,1.428,3.785,1.428C1.698,1.428,0,3.097,0,5.148
+        C0,7.2,1.698,8.869,3.785,8.869h1.453c0.315,0,0.572,0.252,0.572,0.562c0,0.311-0.257,0.563-0.572,0.563
+        c-0.486,0-0.88,0.388-0.88,0.865c0,0.478,0.395,0.865,0.88,0.865c0.421,0,0.816-0.111,1.158-0.303
+        c0.318,0.865,0.761,1.647,1.318,2.31c0.686,0.814,1.515,1.425,2.433,1.808c-0.04,0.487-0.154,1.349-0.481,2.191
+        c-0.591,1.519-1.564,2.257-2.975,2.257H5.238c-0.486,0-0.88,0.388-0.88,0.865v4.283c0,0.478,0.395,0.865,0.88,0.865h14.525
+        c0.485,0,0.88-0.388,0.88-0.865v-4.283c0-0.478-0.395-0.865-0.88-0.865h-1.452c-1.411,0-2.385-0.738-2.975-2.257
+        c-0.328-0.843-0.441-1.704-0.482-2.191c0.918-0.383,1.748-0.993,2.434-1.808c0.557-0.663,1-1.445,1.318-2.31
+        c0.342,0.192,0.736,0.303,1.157,0.303c0.486,0,0.88-0.387,0.88-0.865c0-0.478-0.394-0.865-0.88-0.865
+        c-0.315,0-0.572-0.252-0.572-0.563c0-0.31,0.257-0.562,0.572-0.562h1.452C23.303,8.869,25,7.2,25,5.148
+        C25,3.097,23.303,1.428,21.215,1.428z M5.238,7.138H3.785c-1.116,0-2.024-0.893-2.024-1.99c0-1.097,0.908-1.99,2.024-1.99
+        c1.117,0,2.025,0.893,2.025,1.99v2.06C5.627,7.163,5.435,7.138,5.238,7.138z M18.883,21.717v2.553H6.118v-2.553H18.883
+        L18.883,21.717z M13.673,18.301c0.248,0.65,0.566,1.214,0.947,1.686h-4.24c0.381-0.472,0.699-1.035,0.947-1.686
+        c0.33-0.865,0.479-1.723,0.545-2.327c0.207,0.021,0.416,0.033,0.627,0.033c0.211,0,0.42-0.013,0.627-0.033
+        C13.195,16.578,13.344,17.436,13.673,18.301z M12.5,14.276c-2.856,0-4.93-2.638-4.93-6.273V1.73h9.859v6.273
+        C17.43,11.638,15.357,14.276,12.5,14.276z M21.215,7.138h-1.452c-0.197,0-0.39,0.024-0.572,0.07v-2.06
+        c0-1.097,0.908-1.99,2.024-1.99c1.117,0,2.025,0.893,2.025,1.99C23.241,6.246,22.333,7.138,21.215,7.138z"/>
+            </symbol>
+      </svg>
+     </div>
+
+                     <!-- Section header -->
+                     <div class="section-header text-center section-performance">
+                      <h2>RECENT PERFORMANCES</h2>
+                   </div>
+                    <!-- /Section header -->
+            
+                    <!-- /blog -->
+                  <div class="video-container">
+                   <div class="row">
+      
+                      <div class="column" >
+                        <div>
+                          <iframe height="300" width="380" src="https://www.youtube.com/embed/f42xKo6Evyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                      </div>
+                      <p font size = "4" color = "white">Aryans</p>
+                      </div>
+      
+                      <div class="column" >
+                        <div>
+                          <iframe height="300" width="380" src="https://www.youtube.com/embed/SmEATgg2D64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        </div>
+                         <p font size = "4" color = "white">Kshatriyas</p>
+                        </div>
+                      </div>
+                
+                  
+                    <div class="row">
+                      <div class="column" >
+                        <div>
+                          <iframe height="300" width="380" src="https://www.youtube.com/embed/4RZBR5M4Fmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        </div>
+                      <p font size = "4" color = "white">Nawabs</p>
+                      </div>
+      
+                      <div class="column">
+                        <div>
+                          <iframe height="300" width="380" src="https://www.youtube.com/embed/KCivSw9iHb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        </div>
+                      <p font size = "4" color = "white">Peshwas</p>
+                      </div>
+                    </div>
+    
+                    <div class="row">
+                      <div class="column" >
+                          <div>
+                            <iframe height="300" width="380" src="https://www.youtube.com/embed/thGCR-rRMD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                          </div>
+                        <p font size = "4" color = "white">Shauryas</p>
+                        </div>
+  
+                    </div>
+                  </div>
+
+                     
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading text-center"><b>Leaderboard</b></div>
+          <table class="table table-responsive table-hover galaxytable">
+            <thead>
+              <tr>
+                  <th>Clubs</th>
+                  <th>Points</th>
+                  <th>Aryans</th>
+                  <th>Kshatriya</th>
+                  <th>Nawab</th>
+                  <th>Peshwas</th>
+                  <th>Shauryas</th>
+              </tr> 
+            </thead>
+            <tbody>
+              <tr class="clickable event4" data-toggle="collapse" id="table1" data-target=".table1" >
+                <td>Film Trophy</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+             
+              </tr>
+              <tr class="collapse table1">
+                <td colspan="999">
+                  <div>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Events</th>
+                          <th>Points</th>
+                          <th>Aryans</th>
+                          <th>Kshatriya</th>
+                          <th>Nawab</th>
+                          <th>Peshwas</th>
+                          <th>Shauryas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="club1 event0">
+                          <td>Shortfilm</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="club1 event1">
+                          <td>51 hrs</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="club1 event2">
+                          <td>Screen-writing</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="club1 event3">
+                        <td>B Roll</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td> 
+                        </tr>                 
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+      
+      
+           <tr class="clickable event8" data-toggle="collapse" id="table2" data-target=".table2">
+              <td>Dance Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table2">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club2 event5">
+                      <td>Group Dance</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club2 event6">
+                      <td>Cypher Hustle</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club2 event7">
+                      <td>Dance Drama</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>                 
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+      
+      
+              <tr class="clickable event12" data-toggle="collapse" id="table3" data-target=".table3">
+                  <td>Design And Animation Trophy</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>    
+                  </tr>
+              </tr>
+              <tr class="collapse table3">
+                <td colspan="999">
+                  <div>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Events</th>
+                          <th>Points</th>
+                          <th>Aryans</th>
+                          <th>Kshatriya</th>
+                          <th>Nawab</th>
+                          <th>Peshwas</th>
+                          <th>Shauryas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="club3 event9">
+                          <td>Composites</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="club3 event10">
+                          <td>48 hours 2D design</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="club3 event11">
+                          <td>Rebranding</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>                 
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+      
+      
+           <tr class="clickable event17" data-toggle="collapse" id="table4" data-target=".table4">
+              <td>Dramatics Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table4">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club4 event13">
+                      <td>Stage Play</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club4 event14">
+                      <td> Street Play</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club4 event15">
+                      <td>Monoact</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr class="club4 event16">
+                      <td>Mime</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+          <tr class="clickable event27" data-toggle="collapse" id="table5" data-target=".table5">
+              <td>HSS Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table5">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club5 event18">
+                      <td>Aaghaz</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club5 event19">
+                      <td>Gupchup</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club5 event20">
+                      <td>Tark</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr class="club5 event21">
+                      <td> Aamne- Saamne</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club5 event22">
+                      <td>Kirdaar</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club5 event23">
+                      <td>Nirvaak</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club5 event24">
+                      <td>PD</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr class="club5 event25">
+                      <td>Kavyanjali</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club5 event26">
+                      <td>Shabdrang</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+      
+          <tr class="clickable event31" data-toggle="collapse" id="table6" data-target=".table6">
+              <td>Anime Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table6">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club6 event28">
+                      <td>Cosplay</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club6 event29">
+                      <td>Character Design</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club6 event30">
+                      <td>Seiyuu Challenge</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>                 
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+          <tr class="clickable event33" data-toggle="collapse" id="table7" data-target=".table7">
+              <td>Book Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table7">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr >
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club7 event32">
+                      <td>Book Cover Design</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>                
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+      
+          <tr class="clickable event42" data-toggle="collapse" id="table8" data-target=".table8">
+              <td>Photography Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table8">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr >
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club8 event34">
+                      <td>Untangle</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club8 event35">
+                      <td>Resonance</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club8 event36">
+                      <td>PhotoStory</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr class="club8 event37">
+                      <td>Portraits</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club8 event38">
+                      <td>TechTricks</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club8 event39">
+                      <td>Street </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club8 event40">
+                      <td>Minimalism</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr class="club8 event41">
+                      <td>In the studio</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+          <tr class="clickable event45" data-toggle="collapse" id="table9" data-target=".table9">
+              <td>SFS Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table9">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club9 event43">
+                      <td>SFS	Insider</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club9 event44">
+                      <td>Film Fights</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>                
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+          <tr class="clickable event51" data-toggle="collapse" id="table10" data-target=".table10">
+              <td>Fine Arts Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table10">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club10 event46">
+                      <td>Digital Painting</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club10 event47">
+                      <td>Canvas Painting</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club10 event48">
+                      <td>Still Life Sketching</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr class="club10 event49">
+                      <td>Merge-it-all</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club10 event50">
+                      <td>The Big Art Thing</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+          <tr class="clickable event58" data-toggle="collapse" id="table11" data-target=".table11">
+              <td>Quiz Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table11">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club11 event52">
+                      <td>SciBizTech Quiz</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club11 event53">
+                      <td>India Quiz</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club11 event54">
+                      <td>Sports Quiz</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr class="club11 event55">
+                      <td>MELA & Pop Culture Quiz</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club11 event56">
+                      <td>HELM Quiz</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club11 event57">
+                      <td>General Quiz</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+      
+          <tr class="clickable event64" data-toggle="collapse" id="table12" data-target=".table12">
+              <td>ELS Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table12">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club12 event59">
+                      <td>JAM</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club12 event60">
+                      <td>Poetry slam</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club12 event61">
+                      <td>Creative writing</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr class="club12 event62">
+                      <td>Word games</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club12 event63">
+                      <td>DumbC</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+      
+          <tr class="clickable event67" data-toggle="collapse" id="table13" data-target=".table13">
+              <td>SOS Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table13">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club13 event65">
+                      <td>SOS	Opinion</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club13 event66">
+                      <td>Blitz</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>                
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+          <tr class="clickable event70" data-toggle="collapse" id="table14" data-target=".table14">
+              <td>Music Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table14">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club14 event68">
+                      <td>Band</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club14 event69">
+                      <td>Pair on Stage</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>                
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+          <tr class="clickable event72" data-toggle="collapse" id="table15" data-target=".table15">
+              <td>Debating Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+              </tr>
+          </tr>
+          <tr class="collapse table15">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club15 event71">
+                      <td>Parliamentary Debate</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>                
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+      
+          <tr class="clickable event78" data-toggle="collapse" id="table16" data-target=".table16">
+              <td>Miscellaneous Trophy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>    
+          </tr>
+          <tr class="collapse table16">
+            <td colspan="999">
+              <div>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Events</th>
+                      <th>Points</th>
+                      <th>Aryans</th>
+                      <th>Kshatriya</th>
+                      <th>Nawab</th>
+                      <th>Peshwas</th>
+                      <th>Shauryas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="club15 event73">
+                      <td>Galaxy Parade</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club15 event74">
+                      <td>Pool Flag</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club15 event75">
+                      <td>Stand Up</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> 
+                    <tr class="club15 event76">
+                      <td>Improv</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="club15 event77">
+                      <td>Pool Video</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr class="clickable warning event79" data-toggle="collapse" id="table17" data-target=".table17">
+            <td>Points</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>    
+          </tr>
+          <tr class="clickable info event80" data-toggle="collapse" id="table18" data-target=".table18">
+            <td>Points(Normalised)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>    
+          </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+                <!-- Section-header -->
+                <!-- <div class="section-header text-center get-touch-galaxy">
+                  <h2 >GET IN TOUCH</h2>
+                </div>
+        
+              
+                <div class="col-sm-12 col-md-12">
+                    <div class="contact">
+                      <div class="text-center">
+                        <a href="https://www.facebook.com/montageiitk"><i class="fab fa-facebook" aria-hidden="true" style="transform: scale(2);"></i></a>
+                        <h3>Facebook</h3>
+                        <p>Like and Follow our facebook page for regular updates</p>
+                      </div>
+                    </div>
+                  </div> -->
+          
+  
+      </section>
+      <!-- <i class="fab fa-facebook-f"></i> -->
+    
+    </main>
+  
+    <div class="part13">
+      <!-- <img src="img/main.png" alt="" class="aimg"> -->
+    </div>
+  
+  </div>
+  <footer>
+        
+    <div class="row" style="max-width: 100vw;">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+    
+  </footer>
+
+
+
+</body>
+</html>
+  

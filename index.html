@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title> Media and Cultural Council, IIT Kanpur</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/loader.css">
+        <link rel="stylesheet" href="css/indexmobile.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        <script src="js/new.js"></script>
+        <script src="js/loader.js"></script>
+        <script src="js/card.js"></script>
+
+
+    </head>
+    <body >
+        <div class="loader-wrapper">
+            <span id="loader"></span>
+        </div>
+        <div class="cursor">
+          <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+              <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+            </svg>
+          </div>
+
+          <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+              <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler hoverable">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Facilities</a></li>
+                  </ul>
+                </div>
+                <div class="box-container">
+                  <img src="img/oat1.png" alt="" class="navimg navimg1">
+                  <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+                  <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+                  <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+                  <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+                  <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+              </div>
+                <div class="social-nav model-1">
+                  <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+                  <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+                  <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+              <nav class="sidenav">
+                <ul>
+                  <li class="nav-link active nav-link-ltr hoverable"  onclick="abc('1')"><a>Home </a></li>
+                  <!--  <span>O</span>
+                    <span>M</span>
+                    <span>E</span> -->
+
+                  <li class="nav-link nav-link-ltr hoverable"  onclick="abc('2')" ><a>About us</a>
+                     <!-- <span>B</span>
+                      <span>O</span>
+                      <span>U</span>
+                      <span>T</span>
+                      <span>U</span>
+                      <span>S</span> -->
+                  </li>
+                  <li class="nav-link nav-link-ltr hoverable"  onclick="abc('3')"><a>Events</a>
+                  <!--  <span>V</span>
+                    <span>E</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>S</span>  -->
+                  </li>
+                  <li class="nav-link nav-link-ltr hoverable"  onclick="abc('4')"><a>Clubs</a>
+                <!---   <span>L</span>
+                    <span>U</span>
+                    <span>B</span>
+                    <span>S</span>  -->
+                  </li>
+                  <li class="nav-link nav-link-ltr hoverable"  onclick="abc('5')"><a>Upcoming</a>
+                <!--    <span>A</span>
+                    <span>L</span>
+                    <span>E</span>
+                    <span>N</span>
+                    <span>D</span>
+                    <span>A</span>
+                    <span>R</span> -->
+                  </li>
+                  <li class="nav-link nav-link-ltr hoverable"  onclick="abc('6')"><a>Facilities</a>
+                <!--    <span>O</span>
+                    <span>L</span>
+                    <span>L</span>
+                    <span>O</span>
+                    <span>W</span> -->
+                  </li>
+                </ul>
+              </nav>
+
+
+            <div class="part03">
+                <!-- <img src="img/main.png" alt="" class="aimg"> -->
+            </div>
+            <div class="part13">
+                <!-- <img src="img/main.png" alt="" class="aimg"> -->
+            </div>
+            <div class="part23">
+                <!-- <img src="img/main.png" alt="" class="aimg"> -->
+            </div>
+            <div class="part33">
+                <!-- <img src="img/main.png" alt="" class="aimg"> -->
+            </div>
+            <div class="part43">
+                <!-- <img src="img/main.png" alt="" class="aimg"> -->
+            </div>
+            <div class="part53">
+                <!-- <img src="img/main.png" alt="" class="aimg"> -->
+            </div>
+            <div class="part63">
+                <!-- <img src="img/main.png" alt="" class="aimg"> -->
+            </div>
+
+
+            <div class="content">
+
+                <div class="sec1">
+                      <img src="img/MnC.png" alt="" class="img1">
+                        <h1 class="head1">Media And Cultural Council<br><span class="subhead">IIT Kanpur</span></h1>
+
+                </div>
+
+                <div class="sec2 parallax">
+                    <div class="part21">
+                        <h1 class="head2">ABOUT US</h1>
+                        <p class="content2">
+                            The Media and Cultural Council at IITK is a hub for all activities about media and culture.
+                        Sounds obvious, right? Obvious as it may be, the implications of that have enriched the campus experience for innumerable students.
+                        </p>
+                        <span class="view2">
+                            <button class="btn hoverable vdes1"  onclick="page()">View More</button>
+                        </span>
+                    </div>
+                    <div class="part22">
+                        <img src="img/aboutrhs.png" alt="" class="img2">
+                    </div>
+                </div>
+
+                <div class="sec3 parallax">
+                    <div class="part31">
+                        <h1 class="head3">Events</h1>
+
+                        <p class="content3">
+                            The Media and Cultural Council at IITK organises Four events round the year.
+                            Including several workshops and competitions these events help campus community explore various cultural fields.
+                        </p>
+                        <span class="view3">
+                            <button class="btn hoverable vdes2"  onclick="eventfun()">View More</button>
+                        </span>
+                    </div>
+                    <div class="part32">
+                        <img src="img/eventrhs.png" alt="" class="img3">
+                    </div>
+                </div>
+
+                <div class="sec4 parallax">
+                    <div class="part41">
+                        <h1 class="head4">Clubs And Societies </h1>
+                        <p class="content4">
+                            The Media and Cultural Council at IITK is a hub for all activities about media and culture.
+                            A major part of these activities are carried out by various Clubs and Societies .
+                        </p>
+                        <span class="view4">
+                            <button class="btn hoverable vdes3"  onclick="club()">View More</button>
+                        </span>
+                    </div>
+                    <div class="part42">
+                        <img src="img/clubrhs.png" alt="" class="img4">
+                    </div>
+                </div>
+
+
+                <div class="sec5 parallax">
+                    <div class="part51">
+                        <h1 class="head5">Upcoming Events</h1>
+                          <p class="content5">
+                            All the Events going to be conducted by Council and Clubs and Societies of the Council
+                          </p>
+                          <span class="view5">
+                              <button class="btn hoverable vdes4"  onclick="up()">View More</button>
+                          </span>
+                    </div>
+                    <div class="part52">
+                        <img src="img/calendarrhs.png" alt="" class="img5">
+                    </div>
+                </div>
+                <div class="sec6 parallax">
+                    <div class="part61">
+                        <h1 class="head6">Facilities</h1>
+                        <p class="content6">
+                           Workshops Registrations, Movie Request, Club Room Booking, Equipment Booking all at one place
+                        </p>
+                        <!-- <div class="pen-container">
+                          <a id="facebook" href="https://www.instagram.com/mnciitk/"></a>
+                          <a id="googleplus" href="https://www.youtube.com/user/fmciitkanpur/featured"></a>
+                          <a id="instagram" href="https://www.facebook.com/mnciitk"></a>
+                        </div> -->
+                        <span class="view6">
+                          <button class="btn hoverable vdes5"  onclick="serv()">View More</button>
+                      </span>
+                    </div>
+                    <div class="part62">
+                        <img src="img/servicesrhs.png" alt="" class="img6">
+                    </div>
+                </div>
+            </div>
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script><script src="js/card.js"></script> -->
+
+    </body>
+</html>

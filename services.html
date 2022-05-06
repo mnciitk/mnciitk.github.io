@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Facilities &middot; Media and Cultural Council, IIT Kanpur</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/events.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/loader.css">
+        <link rel="stylesheet" href="css/sidenavMobile.css">
+        <link rel="stylesheet" href="css/sidnav.css">
+        <link rel="stylesheet" href="css/services.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+
+        <script src="js/events.js"></script>
+        <script src="js/sidenavMobile.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/loader.js"></script>
+        <script src="js/card.js"></script>
+        <script src="js/services.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+
+    </head>
+    <body>
+      <div class="loader-wrapper">
+        <span id="loader"></span>
+      </div>
+      <div class="sucess">
+
+         <p >Form Submitted</p>
+
+      </div>
+        <div class="part23" style="background-color:#faf6da;">
+          <!-- <img src="img/main.png" alt="" class="aimg"> -->
+        </div>
+
+        <div class="cursor">
+          <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+              <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+            </svg>
+          </div>
+
+          <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+              <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler hoverable">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+                    <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Facilities</a></li>
+                  </ul>
+                </div>
+                <div class="box-container">
+                  <img src="img/oat1.png" alt="" class="navimg navimg1">
+                  <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+                  <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+                  <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+                  <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+                  <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+              </div>
+                <div class="social-nav model-1">
+                  <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+                  <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+                  <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+          <div id="mySidenav" class="sidenav2">
+            <a href="javascript:void(0)" class="closebtn" style="color:#55828b ;"onclick="closeNav()">&times;</a>
+            <div><a href="#section-1">Club Room / Equipment Booking</a></div>
+            <div><a href="#section-2">Movie Request</a></div>
+            <div><a href="#section-3">WorkShop Registrations</a></div>
+          </div>
+
+          <div id="mySidenav2" class="sidenav3">
+            <a href="javascript:void(0)" class="closebtn hoverable" style="color:#e6837e ;z-index: 100;" onclick="closeNav2()">&times;</a>
+                <div class="login-box">
+                    <h2>Club Room / Equipment Booking</h2>
+                    <span class="equipman">Please Fill Dates Correctly</span>
+                    <span class="equipwarn">Server Error</span>
+                    <form id="equip"  method="POST" onsubmit="form(event)">
+                      <div class="user-box">
+                        <input type="text" name="Name" required>
+                        <label>Name</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="Roll" required>
+                        <label>RollNo</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="Address" required>
+                        <label>Address</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="details" required>
+                        <label>Club Room / Equipment Details</label>
+                      </div>
+                      <div class="user-box dateinput">
+                        <input type="datetime-local" name="date" required>
+                        <label>Date(From)</label>
+                      </div>
+                      <div class="user-box dateinput">
+                        <input type="datetime-local" name="date2" required>
+                        <label>Date(Till)</label>
+                      </div>
+                      <button href ="#" class="formsbn hoverable" >
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+
+          </div>
+
+          <div id="mySidenav3" class="sidenav3">
+            <a href="javascript:void(0)" class="closebtn hoverable" style="color:#227d1f ;"onclick="closeNav3()">&times;</a>
+                <div class="login-box">
+                    <h2>Movie Requests</h2>
+                    <span class="equipman">Please Fill Dates Correctly</span>
+                    <span class="equipwarn">Server Error</span>
+                    <form id="equip2"  method="POST" onsubmit="form2(event)">
+                      <div class="user-box">
+                        <input type="text" name="Name" required>
+                        <label>Name</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="Roll" required>
+                        <label>RollNo</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                      </div>
+                      <div class="user-box">
+                        <input type="text" name="movie" required>
+                        <label>Movie Name</label>
+                      </div>
+                      <div class="user-box dateinput">
+                        <input type="datetime-local" name="date" required>
+                        <label>Date</label>
+                      </div>
+                      <button href ="#" class="formsbn hoverable" >
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+
+          </div>
+
+          <div class="mega">
+            <header class="resize">
+              <img class="img-container" src="img/serviceheader.jpg" >
+            </header>
+
+
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Find all the facilities here</button>
+              <div id="myDropdown" class="dropdown-content" >
+                <a href="#section-1">Club room / Equipment Booking</a>
+                <a href="#section-2">Movie Request</a>
+                <a href="#section-3">WorkShop Registrations</a>
+              </div>
+            </div>
+            <div class="sid" style="background-color: #faf6da;">
+              <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+            </div>
+            <main>
+              <section id="section-1">
+
+                <div class="clubs-container">
+                  <div class="clubs">
+
+                          <div class="clubs-preview" >
+                              <img src="img/galaxy_out.jpg" height="100%" width="100%"alt="">
+                         </div>
+
+                      <div class="clubs-info">
+                          <h1>Club room / Equipment Booking</h1>
+                          <h2>A Portal to book Equipments provided by the council</h2>
+                          <button class="btn hoverable" style="background-color:#e6837e" onclick="openform()">Book Now</button>
+                      </div>
+                  </div>
+              </div>
+
+              </section>
+
+              <section id="section-2">
+
+                <div class="clubs-container">
+                  <div class="clubs">
+
+                          <div class="clubs-preview" style="background-color:#227d1f">
+                              <img src="img/freshers_out.jpg" height="100%" width="100%"alt="">
+                         </div>
+
+                      <div class="clubs-info">
+                          <h1>Movie Request</h1>
+                          <h2>Screen your Movie at OAT</h2>
+                          <button class="btn hoverable" style="background-color:#227d1f" onclick="openform2()">Request Now</button>
+                      </div>
+                  </div>
+              </div>
+
+              </section>
+
+              <section id="section-3">
+
+                <div class="clubs-container">
+                  <div class="clubs">
+
+                          <div class="clubs-preview" style="background-color:#43ccc7">
+                              <img src="img/impression_out.jpg" height="100%" width="100%"alt="">
+                         </div>
+
+                      <div class="clubs-info">
+                          <h1>WorkShop Registrations</h1>
+                          <h2>Find And register for upcoming exciting WorkShops</h2>
+                          <button class="btn hoverable" style="background-color:#43ccc7" onclick="trans('Workshop','#43ccc7')">View More</button>
+                      </div>
+                  </div>
+              </div>
+
+                 </section>
+
+
+              </section>
+
+
+            </main>
+
+          </div>
+
+
+  <footer>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+
+  </footer>
+
+
+
+    </body>
+</html>

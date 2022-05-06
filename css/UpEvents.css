@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+body {
+    font-family:  'Rubik', sans-serif;
+    margin:0;
+
+    }
+
+
+    .part23{
+      height:100vh;
+      width: 100vw;
+      position: absolute;
+      /* background-color: #e86868; */
+      display: block;
+      z-index: 1000;
+  }
+  .section{
+      margin:0;
+  }
+
+  .events-header{
+      text-align: center;
+      padding: 50px;
+      margin-bottom: 40px;
+  }
+  .events-header h1{
+      font: 600 2rem Raleway, sans-serif;
+      letter-spacing: -0.5px;
+      color: #000;  
+  }
+  .events-header p{
+    margin:40px 0 auto;
+    padding: auto;
+    font-size: 1.5rem;
+  }
+  
+  .events-subheader{
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 40px;
+  }
+
+  .events-subheader p{
+    margin:40px 0 auto;
+    padding: auto;
+    font-size: 1.5rem;
+  }
+
+  .row{
+    width: 100vw;
+  }
+  .flip-card {
+    background-color: transparent;
+    height:400px;
+    width:450px;
+    margin: 0 auto;
+    margin-bottom:70px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  /*  text-align: center; */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+   
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    z-index:1;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    color: black;
+    /*background-color: #fff;*/
+  }
+  
+  .flip-card-back {
+    font-family:  'Rubik', sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #000;
+    transform: rotateY(180deg);
+    height: auto;
+  }
+
+  .clubs {
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family:  'Rubik', sans-serif;
+    background-color: #fff;
+ }
+  .clubs-preview{
+    height:350px;
+    width:450px;
+    overflow: hidden;
+    object-fit: contain;
+    object-position: center center;
+  }
+  .clubs-preview img{
+      max-width: 100%;
+  }
+  .event-time{
+      float: left;
+      padding: 10px 20px 0;
+  }
+  .event-name{
+      text-align: center;
+      padding: 10px 20px 0;
+  }
+  .event-head{
+      width:50%;
+      display: inline-block;
+      text-align: left;
+  }
+  .event-head-back{
+      width:100%;
+      text-align: center;
+  }
+  .event-name h1{
+      font-size:20px;
+      margin-bottom: 0;
+  }
+  .event-info{
+      padding:20px;
+      padding-bottom: 0;
+      text-align: justify;
+      text-justify: inter-word;
+  }
+  .event-info p{
+      float:left;
+      padding: auto 0;
+      margin:  10px 0;
+  }
+  .event-contact {
+      float:right;
+  }
+ .event-contact h1{
+     font-size:20px;
+     margin-bottom: 0;
+ }
+ 
+ .leftm,.rightm{
+  margin-left:5vw;
+} 
+ @media  (max-width:600px) {
+  .events-header h1{
+    font: 550 1.75rem Raleway, sans-serif;
+    letter-spacing: 2px;
+    color: #000;
+}
+    .leftm,.rightm{
+        margin-left:5vw;
+    }
+    .flip-card{
+        width:90vw;
+        margin:0 auto;
+        margin-bottom: 100px;
+    }
+    .clubs-preview{
+        width:90vw;
+    }
+ }
+ @media  (max-width:900px) and (min-width:500px){
+  .leftm,.rightm{
+    margin: auto;
+    margin-bottom: 70px;
+  }
+  .flip-card{
+     width:45vw;
+  }
+  .clubs-preview{
+    width:45vw;
+}
+ }
+.upcoming-events{
+  position: absolute;
+  top:100vh
+}

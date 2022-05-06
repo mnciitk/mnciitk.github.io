@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Club &middot; Media and Cultural Council, IIT Kanpur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/Dance.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/loader.css">
+   
+    <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/sidnav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+
+    <script src="js/sidenavMobile.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span id="loader"></span>
+  </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler hoverable">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/oat1.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+            <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+            <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+        </div>
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
+        </div>
+      </div>
+  </div>
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#FECC47 ;"" >&times;</a>
+    <div><a key='Anime'>Anime Society</a></div>
+    <div><a key='book'>Book Club</a></div>
+    <div><a key='Dance' >Dance Club</a></div>
+    <div><a key='DebSoc'>Debate and Discussion Society</a></div>
+    <div><a key='DNA'>Design And Animation Club</a></div>
+    <div><a key='Dramatics'>Dramatics Club</a></div>  
+    <div><a key='ELS'>English Literary Society</a></div>
+    <div><a key='fac'>Fine Arts Club</a></div>
+    <div><a key='film'>Film Club</a></div>
+    <div><a key="HSS">Hindi Sahitya Sabha</a></div>
+    <div><a key="hh">Humor House</a></div>
+    <div><a key='music'>Music Club</a></div>
+    <div><a key='photo'>Photography Club</a></div>
+    <div><a key='quiz'>Quiz Club</a></div>
+    <div><a key='sfs'>Student Film Society</a></div>
+    <div><a key='sos'>Student Opinion Soceity</a></div>
+  </div> 
+  <div class="part23" style="background-color: #FECC47;">
+    <!-- <img src="img/main.png" alt="" class="aimg"> -->
+  </div>
+  <div class="mega">
+    <header class="resize" >
+      <img class="img-header" src="img/cover/film.jpg" >
+    </header>
+    
+    <!-- <nav>
+      <ul>
+        <div class="cut1">
+          <li><a class="current">Film Club</a></li>
+                  <li><a onclick="trans('photo','#713d39')">Photography Club</a></li>
+                  <li ><a onclick="trans('Dance','black')" >Dance Club</a></li></div>
+                  <div class="cut2">
+                  <li><a  onclick="trans('music','#43ccc7')">Music Club</a></li>
+                  <li><a onclick="trans('DNA','#e67496')">Design And Animation Club</a></li>
+                  <li><a onclick="trans('book','#96626f')">Book Club</a></li></div>
+                  <div class="cut3">
+                  <li><a onclick="trans('FAC','#96626f')">Fine Arts Club</a></li>
+                  <li><a onclick="trans('Dramatics Club','#96626f')">Dramatics Club</a></li>
+                  <li><a onclick="trans('HSS','#96626f')">Hindi Sahitya Sabha</a></li></div>
+                  <div class="cut4">
+                  <li><a onclick="trans('ELS','#96626f')">English Literacy Club</a></li>
+                  <li><a onclick="trans('sfs','#227d1f')">Student Film Society</a></li>
+                  <li><a onclick="trans('Anime','#ff9ea1')">Anime Club</a></li></div>
+                  <li><a onclick="trans('quiz','#dafa0d')">Quiz Club</a></li>
+                  <li><a onclick="trans('DebSoc','#dafa0d')">Debating Soceity</a></li>
+                  <li><a onclick="trans('sos','#dafa0d')">Student Opinion Society</a></li>  
+
+      </ul>
+    </nav> -->
+
+
+    <!-- <nav>
+      <div>
+          <div><a key='Anime'>Anime Club</a></div>
+          <div><a key='book'>Book Club</a></div>
+          <div><a key='Dance'>Dance Club</a></div>
+          <div><a key='DebSoc'>Debating Soceity</a></div>
+          <div><a key='DNA'>Design And Animation Club</a></div>
+          <div><a key='Dramatics Club'>Dramatics Club</a></div>  
+          <div><a key='ELS'>English Literary Society</a></div>
+          <div><a key='fac'>Fine Arts Club</a></div>
+          <div><a key='film'>Film Club</a></div>
+          <div><a key="HSS">Hindi Sahitya Sabha</a></div>
+    <div><a key="hh">Humor House</a></div>
+          <div><a key='music'>Music Club</a></div>
+          <div><a key='photo'>Photography Club</a></div>
+          <div><a key='quiz'>Quiz Club</a></div>
+          <div><a key='sfs'>Student Film Society</a></div>
+          <div><a key='sos'>Student Opinion Soceity</a></div>  
+      </div>
+  </nav> -->
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find all the clubs here</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li><a key='Anime'>Anime Society</a></li>
+          <li><a key='book'>Book Club</a></li>
+          <li ><a key='Dance' >Dance Club</a></li>
+          <li><a key='DebSoc'>Debate and Discussion Society</a></li>
+          <li><a key='DNA'>Design And Animation Club</a></li>
+          <li><a key='Dramatics'>Dramatics Club</a></li>
+          <li><a key='ELS'>English Literary Society</a></li>
+          <li><a key='fac'>Fine Arts Club</a></li>
+          <li><a key='film'>Film Club</a></li>
+          <li><a key='HSS'>Hindi Sahitya Sabha</a></li>
+          <li><a key='hh'>Humour House</a></li>
+          <li><a key='music'>Music Club</a></li>
+          <li><a key='photo'>Photography Club</a></li>
+          <li><a key='quiz'>Quiz Club</a></li>         
+          <li><a key='sfs'>Student Film Society</a></li> 
+          <li><a key='sos'>Student Opinion Society</a></li>  
+        </ul>
+      </div>
+    </div>
+    <div class="sid" style="background-color: #FECC47;">  
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+    </div>
+    <main>
+      <section id="section-1">
+        
+      <div class="aboutu-container">
+        <div class="aboutu">
+           
+            <div class="aboutu-info">
+                <h2>ABOUT US</h2>
+                <p>“Filmmaking is a chance to live many lifetimes.”<br>
+
+                  The subtle science of filmmaking is not achievable without prolific imagination and a zeal of passion. We at Film Club, IIT Kanpur provide a boat to the islands of this art. We tunnel the club’s functioning and activities through various events. Cinematography, Screenwriting, Casting, Shooting, Sound recording, Production, and Editing are the aspects which are thoroughly studied during the club’s overall walkthrough. Film Club takes interest in a variety of work ranging from short films, skits, sketches to documentaries. We also take part in competitions all over India through various Fests and Events and try to learn from the attributes lying within the tasks.<br><br>
+                
+                  The Film Club organises a whole bunch of activities around the year. This includes the making of the Orientation video, which is a collection of the lasting nostalgia of the Freshers’ Orientation programme; the Freshers’ Introduction video, through  which the freshers are introduced to the campus junta; the Freshers’ Attempt videos in which the first-year undergraduates try their hands at filmmaking by releasing at least three short films every year; as well as the Batch video, which is a final video memoir of the graduating batch, marking the end of their stay at IIT Kanpur. We also organise workshops in the summers, for the success of which we cover up every aspect of filmmaking (with fieldwork), diligently. We participate in the largest filmmaking festival of India, namely the India Film Project that comprises making a complete short film under 51 hours. Moreover, bringing out our best during the Antaragni competitions as well as the Inter IIT competitions is also a part of our objectives.<br><br>
+                  
+                  We aim to foster creative inculcation and a better understanding and depth in the art of filmmaking. The presence of the Film Club is essential and thus the goals are gargantuan. Creating quality content for YouTube and other social media platforms so as to enter the realm of professional filmmaking is what we strive for. Keeping the hotshot works apart, the primary aim for us as a club is to penetrate into the hearts of ingenious minds that can carry on the torch of glory riding upon the path laid by the Film Club over the years. 
+                  </p>        
+                
+            </div>
+        </div>
+    </div> 
+          <div class="section-header text-center">
+            <h2>RECENTS EVENTS</h2>
+          </div>
+          
+          <div class="film-container">
+             <div class="divider1">
+                  <!--<li>Harry Potter trivia quiz for freshers (freshers� week).</li>
+                  <li>Orthodox or Cinematic (January second week).</li>
+                  <li>Ha Me (along with Know Your Genre).</li> -->
+                  <div class="list-type5">
+                    <ol>
+                    <li><span><b>Workshops</b> <br>
+                      The club will be organizing Online filmmaking workshops. The workshop would involve separate workshops for Cinematography, Editing, Sound, Writing and Production by the team of the club. The workshop will be held during the month of May.</span></li>
+                    <li><span><b>Participation in Various Competitions</b><br>
+                      Film Club would participate in as many open theme filmmaking competitions as possible (such as IFP, Antaragni, Inter IIT, etc). </span></li> 
+                    <li><span><b>Sketches/Short film</b><br>
+                      The Club shall release short films/ sketches. These would deal with as many genres as possible to make the team as versatile as possible in all the aspects of filmmaking.</span></li>
+                    <li><span><b>Montage</b><br>
+                      The club will enthusiastically participate and help in the conduction and execution of Montage.</span></li>
+                    </ol>
+                  </div>
+             </div>
+             <div class="divider2">
+               <!--   <li>Know Your Genre (October in line with Odyssey).</li>
+                  <li>Crypto Crossword (September first week).</li>
+                  <li>Comic Without Text (Galaxy).</li> -->
+                  <div class="list-type6">
+                    <ol start="5">
+                      <li><span><b>Freshers</b><br>
+                          The club shall release sketches/music videos made entirely by the Freshers so as to introduce as many Y20 to the club as possible. Various competitions for Freshers could also be Organized. Freshers’ QnA video will also be produced.</span></li>   
+                      <li><span><b>Orientation video</b><br>
+                         The club would be producing the orientation video of 2020-21 for the Y20 batch.</span></li>
+                         <li><span><b>Orientation Presentation</b><br>
+                          The club would produce an introductory video and other presentations to be shown during the orientation period. The club will also try to host a pre-orientation competition for the upcoming batch.</span></li>        
+                      <li><span><b>Galaxy'21</b><br>
+                          The Club would organize workshops for Galaxy (if needed) and conduct the various filmmaking competitions in the same.</span></li>
+                    </ol>
+                  </div>
+             </div>
+            </div>
+  
+  
+             
+                <!-- Section header -->
+                <div class="section-header text-center section-performance">
+                  <h2>GALLERY</h2>
+               </div>
+                <!-- /Section header -->
+        
+                <!-- /blog -->
+              <div class="video-container">
+               <div class="row">
+  
+                  <div class="column" >
+                    <div>
+                      <iframe width="380" height="300" src="https://www.youtube.com/embed/H-nWx-31JtE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p font size = "4" color = "white">Orientation'19 Video</p>
+                  </div>
+  
+                  <div class="column" >
+                    <div>
+                      <iframe width="380" height="300" src="https://www.youtube.com/embed/wXSW-n1a-k0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                     <p font size = "4" color = "white">Freshers Introduction 2019</p>
+                    </div>
+                  </div>
+              </div>
+              
+                
+  
+         
+         <div class="section-header text-center section-team">
+            <h2>MEET THE TEAM</h2>
+         </div>
+            
+            <div class="container">
+              <div class="row ">
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/Karunanidhi Rajput.jpg" width="380" height="300">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Karunanidhi Rajput</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/rajpoot.kn.39/" class="fab fa-facebook"></a></li>
+                              
+                              <li><a href="https://www.instagram.com/distinctly__kn/" class="fab fa-instagram"></a></li>
+                            
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="img/Coordie pics/Shreya Vaish.jpg" >
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Shreya Vaish</h3>
+                            <span class="post">Coordinator</span>
+                        </div>
+                        <ul class="social">
+                            <li><a href="Shreya Vaish | Facebook" class="fab fa-facebook"></a></li>
+                            
+                            <li><a href="Shreya Vaish (@rantcat__vaish)" class="fab fa-instagram"></a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/Tanay Bavchikar.jpg" width="380" height="300">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Tanay Bavchikar</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/TanayBavchikar" class="fab fa-facebook"></a></li>
+                              
+                              <li><a href="https://www.instagram.com/tab.6.11/" class="fab fa-instagram"></a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-6 col-lg-3 col-sm-6">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="img/Coordie pics/Yash Vardhan Singh Rathore.jpg" width="380" height="300">
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Yash Vardhan Singh Rathore</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/yashvardhansingh.rathore.3110/" class="fab fa-facebook"></a></li>
+                              <li><a href="https://www.instagram.com/yashvardhansingh.r/" class="fab fa-instagram"></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>  
+                 
+        
+  
+                <!-- Section-header -->
+                <div class="section-header text-center get-touch">
+                  <h2 >GET IN TOUCH</h2>
+                </div>
+                <!-- /Section-header -->
+        
+                <!-- contact -->
+              
+              <div class="row">
+  
+                <div class="column-contact">
+                <div class="col-sm-12 col-md-10">
+                  
+                     <div class="text-center">
+                      <a href="https://www.facebook.com/filmclubfmciitk/"><i class="fab fa-facebook-f" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Facebook</h3>
+                      <p>Like and Follow our facebook page for regular updates</p>
+                     </div>
+                  
+                  </div>
+                </div> 
+  
+                <div class="column-contact">
+                <div class="col-sm-12 col-md-10">
+                 
+                    <div class="text-center">
+                      <a href="https://www.instagram.com/filmclubiitk/?igshid=574721d4k1fh"><i class="fab fa-instagram" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Instagram</h3>
+                      <p>Follus us on Instagram</p>
+                    </div>
+                  
+                  </div>
+                </div> 
+  
+                <div class="column-contact">
+                <div class="col-sm-12 col-md-10">
+                  
+                      <div class="text-center">
+                      <a href="https://www.youtube.com/channel/UCLi1wN-vO5RedLRCuDKBB_g"><i class="fab fa-youtube" aria-hidden="true" style="transform: scale(2);""></i></a>
+                      <h3>Youtube</h3>
+                      <p>Subscribe The Official Channel Of The Club For Videos Of Our Productions.</p>
+                      </div>
+                 
+                  </div>
+                </div>
+              </div> 
+          
+  
+      </section>
+      <!-- <i class="fab fa-facebook-f"></i> -->
+    
+    </main>
+  
+  </div>
+  
+  <footer>
+        
+    <div class="row">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+    
+  </footer>
+
+
+</body>
+</html>
+  

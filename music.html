@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Club &middot; Media and Cultural Council, IIT Kanpur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <link rel="stylesheet" href="css/sidenavMobile.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/sidnav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/MnC.png">
+
+
+    <script src="js/sidenavMobile.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <script src="js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    <script src="js/loader.js"></script>
+    <script src="js/card.js"></script>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span id="loader"></span>
+  </div>
+  <div class="part23" style="background-color: #73F6C4;">
+    <!-- <img src="img/main.png" alt="" class="aimg"> -->
+  </div>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="1" fill="transparent"></circle>
+        <circle cx="15" cy="15" r="13" stroke-width="1" fill="transparent" stroke="white"></circle>
+
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="1" fill="black"></circle>
+      </svg>
+    </div>
+  </div>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler hoverable">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./index.html" class='navt1'>Home</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./about.html" class='navt2'>About Us</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./events.html" class='navt3'>Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./club.html" class='navt4'>Clubs</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./UpEvents.html" class='navt5'>Upcoming Events</a></li>
+              <li class="effect-1 hoverable" data-text="Text"><a href="./services.html" class='navt6'>Services</a></li>
+            </ul>
+          </div>
+          <div class="box-container">
+            <img src="img/oat1.png" alt="" class="navimg navimg1">
+            <img src="img/aboutrhs.png" alt="" class="navimg navimg2">
+            <img src="img/eventrhs.png" alt="" class="navimg navimg3">
+            <img src="img/clubrhs.png" alt="" class="navimg navimg4">
+            <img src="img/calendarrhs.png" alt="" class="navimg navimg5">
+            <img src="img/servicesrhs.png" alt="" class="navimg navimg6">
+        </div>
+          <div class="social-nav model-1">
+            <div><a class="facebook hoverable" href="https://www.facebook.com/mnciitk"><i class="fab fa-facebook"></i></a></div>
+            <div><a class="youtube hoverable" href="https://www.youtube.com/user/fmciitkanpur/featured"><i class="fab fa-youtube"></i></a></div>
+            <div><a class="instagram hoverable" href="https://www.instagram.com/mnciitk/"><i class="fab fa-instagram"></i></a></div>
+          </div>  
+        </div>
+      </div>
+  </div>
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#73F6C4 ;"" >&times;</a>
+    <div><a key='Anime'>Anime Society</a></div>
+    <div><a key='book'>Book Club</a></div>
+    <div><a key='Dance' >Dance Club</a></div>
+    <div><a key='DebSoc'>Debate and Discussion Society</a></div>
+    <div><a key='DNA'>Design And Animation Club</a></div>
+    <div><a key='Dramatics'>Dramatics Club</a></div>  
+    <div><a key='ELS'>English Literary Society</a></div>
+    <div><a key='fac'>Fine Arts Club</a></div>
+    <div><a key='film'>Film Club</a></div>
+    <div><a key="HSS">Hindi Sahitya Sabha</a></div>
+    <div><a key="hh">Humour House</a></div>
+    <div><a key='music'>Music Club</a></div>
+    <div><a key='photo'>Photography Club</a></div>
+    <div><a key='quiz'>Quiz Club</a></div>
+    <div><a key='sfs'>Student Film Society</a></div>
+
+  </div> 
+  <div class="mega">
+    <header class="resize" >
+      <img class="img-header" src="img/cover/music.jpg" >
+    </header>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Find all the clubs here</button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul>
+          <li><a key='Anime'>Anime Society</a></li>
+          <li><a key='book'>Book Club</a></li>
+          <li ><a key='Dance' >Dance Club</a></li>
+          <li><a key='DebSoc'>Debate and Discussion Society</a></li>
+          <li><a key='DNA'>Design And Animation Club</a></li>
+          <li><a key='Dramatics'>Dramatics Club</a></li>
+          <li><a key='ELS'>English Literary Society</a></li>
+          <li><a key='fac'>Fine Arts Club</a></li>
+          <li><a key='film'>Film Club</a></li>
+          <li><a key='HSS'>Hindi Sahitya Sabha</a></li>
+          <li><a key='hh'>Humour House</a></li>
+          <li><a key='music'>Music Club</a></li>
+          <li><a key='photo'>Photography Club</a></li>
+          <li><a key='quiz'>Quiz Club</a></li>         
+          <li><a key='sfs'>Student Film Society</a></li> 
+ 
+  
+        </ul>
+      </div>
+    </div>
+    <div class="sid" style="background-color: #73F6C4;">  
+      <a  onclick="openNav()" data-target="slide-out" class="sidenav-trigger hoverable"><i class="fa fa-bars sidham" aria-hidden="true" style="font-size: 1.25rem;"></i></a>
+    </div>
+    <main>
+      <section id="section-4">
+        
+       <div class="aboutu-container">
+        <div class="aboutu">
+           
+            <div class="aboutu-info">
+                <h2>ABOUT US</h2>
+                <p>“Sometimes, music is the only medicine that the heart and the soul needs.”<br>
+                  The Music Club of IIT Kanpur, endearingly called as the M-Club, is a hub for those melomaniacs who desire to express themselves through this art. At the Music Club, we aim to be the fulcrum where the people can explore and enjoy the various genres of music ranging from jazz, blues, classic Indian to rock, metal and pop. A place to share this passion and perform and jam together to showcase their skills and mesmerize the campus junta, while maintaining the rich legacy of musical prowess, is the vision that this club upholds. <br>
+                  The Musical Extravaganza is the flagship event of the club where the students perform songs from various genres. As a run-up to the Musical Extravaganza, we also organise Hall performances (which are intended to be flash-mobs during mess timings in various Halls of Residences), as well as No-Filters (a more formalised version of ‘Hall performances’, intended for a wider audience). The other major events that we organise include the warm bonfire that incorporates the annual Acoustic Night, where acoustic and feel-good songs are played in the backdrop of a bonfire on a pleasant winter night. The members of this club have composed many original songs, and many student-members of the club often take up music as a career after graduation; which adds to the rich legacy that the club tries to envision.                   
+                  </p>
+            </div>
+        </div>
+    </div> 
+          <div class="section-header text-center">
+            <h2>OUR EVENTS</h2>
+          </div>
+          
+         <div class="list-type">
+             <div class="divider1">
+                  <!--<li>Harry Potter trivia quiz for freshers (freshers� week).</li>
+                  <li>Orthodox or Cinematic (January second week).</li>
+                  <li>Ha Me (along with Know Your Genre).</li> -->
+                  <div class="list-type5">
+                    <ol>
+                    <li><span><b> Musical Extravaganza</b> <br>
+                      It is our flagship event, held once each semester. It is our grandest event in which members of the club perform covers of songs from a variety of genres, as well as some original compositions</span></li>
+                    <li><span><b>Summer Workshops</b><br>
+                      They are organised for the campus community to learn an instrument or work on their vocals</span></li>
+                    </ol>
+                  </div>
+             </div>
+             <div class="divider2">
+               <!--   <li>Know Your Genre (October in line with Odyssey).</li>
+                  <li>Crypto Crossword (September first week).</li>
+                  <li>Comic Without Text (Galaxy).</li> -->
+                  <div class="list-type6">
+                    <ol start="5">
+                      <li><span><b>Acoustic Night </b><br>
+                          It's a more chilled out affair. We aim to create a more intimate experience. Grab something to eat, relax beside the bonfire and enjoy our performances :')</p> </span></li>
+                      <li><span><b>College Fests PArticipation</b><br>
+                          We participate in college festivals like Mood Indigo and also our very own Antaragni. We've won
+                laurels at various platforms and are ready to win them again!</span></li>    
+                    </ol>
+                  </div>
+             </div>
+         </div>
+          
+  
+  
+             
+                <!-- Section header -->
+                <div class="section-header text-center section-performance">
+                  <h2>RECENT PERFORMANCES</h2>
+               </div>
+                <!-- /Section header -->
+        
+                <!-- /blog -->
+              <div class="video-container">
+               <div class="row">
+  
+                  <div class="column" >
+                    <div>
+                      <iframe width="380" height="300" src="https://www.youtube.com/embed/CaUoPYhJk9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                  </div>
+                  <p font size = "4" color = "white">Original Composition:Chemical Cherry</p>
+                  </div>
+  
+                  <div class="column" >
+                    <div>
+                      <iframe width="380" height="300" src="https://www.youtube.com/embed/uUsVeVww2NM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                     <p font size = "4" color = "white">Original Composition:Gyal</p>
+                    </div>
+                  </div>
+            
+              
+                <div class="row">
+                  <div class="column" >
+                    <div>
+                      <iframe width="380" height="300" src="https://www.youtube.com/embed/9-VIinyucls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p font size = "4" color = "white">InterIIT Cult Meet:Alan’s Anecdote</p>
+                  </div>
+  
+                  <div class="column">
+                    <div>
+                      <iframe width="380" height="300" src="https://www.youtube.com/embed/UMI6a_YEENY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p font size = "4" color = "white">Musical Extravaganza ‘19 I:Firth of Fifth </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="column" >
+                      <div>
+                        <iframe width="380" height="300" src=" https://www.youtube.com/embed/lNuFeo77BVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                      </div>
+                    <p font size = "4" color = "white">Musical Extravaganza ‘19 II:Muntazir</p>
+                    </div>
+  
+                  <div class="column">
+                     <div>
+                      <iframe width="380" height="300" src="https://www.youtube.com/embed/OJVjuzo4DR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p font size = "4" color = "white">Musical Extravaganza ‘19 II:Don’t Stop Me Now</p>
+                    </div>
+                </div>
+  
+                <div class="row">
+                  <div class="column" >
+                      <div>
+                        <iframe width="380" height="300" src="https://www.youtube.com/embed/5ziA2N-a4XY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                    <p font size = "4" color = "white">Musical Extravaganza ‘19 II:Eternal Rains</p>
+                    </div>
+  
+                  <div class="column">
+                     <div>
+                      <iframe width="380" height="300" src="https://www.youtube.com/embed/HJgpRgFhY_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p font size = "4" color = "white">Musical Extravaganza ‘18 II:Comfortably Numb</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                  <div class="column" >
+                      <div>
+                        <iframe width="380" height="300" src="https://www.youtube.com/embed/tQee8xTCgLQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                    <p font size = "4" color = "white">Musical Extravaganza ‘18 II:E Major Blues</p>
+                    </div>
+  
+                  <div class="column">
+                     <div>
+                      <iframe width="380" height="300" src=" https://www.youtube.com/embed/eUDY0FWZQKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p font size = "4" color = "white">Afreen afreen</p>
+                    </div>
+                </div>
+              </div>
+  
+         
+         <div class="section-header text-center section-team">
+            <h2>MEET THE TEAM</h2>
+         </div>
+            
+            <div class="container">
+              <div class="row ">
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="https://lh3.googleusercontent.com/fife/AAWUweURzW0aUirwew5eBpHZlqK6MNjWnSxqGtK8PGIlcqMcj7EkaYd_KGdTY9AWZY0S7L6yimhCbCnWY9RInmVc4fAyk66ypJYESD2xb-k3n0cCYXWEREBfPb3AOuofnWE24nWoiybfjOJGPoEAN803RmRLcxK5_Zi5zwtW3sy_dQb3nDlWXdIdZquc_IU8M2RkLZyAzwr-IeckroZ7BtNDedKSvyQAu6bHfR1ZHAwp2GttdAWrM9FLAZPjLa91apQviOdnSK00CNaMojX9sjyABP295MklOQI31wUm3hU7ZjoqikW1i-VHc4Ah7pCEpHZ69P_zbDs1vDkEzcUSbqVBzn94zwuC18_Lk8b9gGN-2uAin_bStSN17YE6uOS1hCjf_pPYOJe3meGv4FK_ixeR2tDPatGp2bJ7lCPSSyt6BTw7uuZqbitRveRK2nMD7j2n7syINGwmyOcXua8nqVN9THrX-4s0Vf-ThWbfP1lMqHLG2EPfN3jgpDRhq0dLx3LuLGuhBxO1-f1JUhjvimn7XuEDi1rzk_Pwm_Mr_h4hlCUpUluFFxVfDinQoiBMX8L98ub1F5AQ7EI3i-c2vVWg9aJJS1--Q-1kjGPtSNx-J7sy9jTFGU_a_MuUTgnZWJw97EsYKnQ_1R-DaSJJCtt_oqpJPn2surd10XtN_RK0xUGKO0mO_HOmWL6wnkZKbJAefPMl_wC32It-Yld7KFkT7k1UxPm7q1cxGFQ=w400-h380-p-k-nu-ft" width="380" height="300" style='object-fit: contain; width: 100%; height: 100%;'>
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Vinoba Pandey</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/vinoba.pandey/" class="fab fa-facebook"></a></li>
+                             
+                              <li><a href="https://www.instagram.com/pandeyji_13/" class="fab fa-instagram"></a></li>
+                             
+                          </ul>
+                      </div>
+                  </div>
+  
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="https://lh3.googleusercontent.com/fife/AAWUweXcd7AT8eOOe8TqcgtmInsxlPxWT8tGcuwj2PcglebDPQViJToIbx0C7FFG0xhZKSmTe2RlRZohWMF1bq-3gruySM7axPgI76Pt03W8i1OSyZ1V_U7oyLmWc-jKSwHeFQ_FRm5XgNM_g036khWF9R_G67WPYycROJgvRmRhHNKAFx-kTq6ngVvC5TiwnNZgt74jQ5qLAsYbVBTyShk6KRjN2VQ5PMc8KfKh63L7nisquKShOFVKz90D4Vkr3q_QMhUbPc-QxmzjTlVycmgixVlnF235eSZJIuK6VrjyEKDvvejJfkqowcImUz5bC6PZZPLkMx0XkSpeNVhXw-f_ypEnMsNNohkGfRqwFDdDgZd6r8nRrhZdKCgVniw8YzeFK1WMcIgb7sl5qX1kdWkAF7l2AprOaDtiZnstVpLQ4T4lqmzOoy7Q_6IacuJdEeH-jGtPPDmUAKsFpN7odk97jLGocDPKr-gqSmj5XXY8d0AJ4STmUmlBse08WZ5k9uWwpuDkQ6D-QcaJpLzxPhtwtUUS3D1TtbgAsECS2Mj2NloPEK_IR_GJJl34waKuFI-nD_72MUXTORI3gcqlltSlaA_oICfFsD_X8L6ZLUhfwAaA2S0rhyb7Kwy_YHoTKsLJYAJ7YcvoTHzixzo5NAZDgZb39gv2pa1ukNGNPTLcmCeiUxdd1DlyHbQFatNGgTjGrO3_YTvN4BS4ROvgKjyJsty4CPAen0LjoWU=w400-h380-p-k-nu-ft" width="380" height="300" style='object-fit: contain; width: 100%; height: 100%;'>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Namgyal Lhamo Dolma</h3>
+                            <span class="post">Coordinator</span>
+                        </div>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/namgyal00" class="fab fa-facebook"></a></li>
+                           
+                            <li><a href="https://www.instagram.com/namgyalhamo/" class="fab fa-instagram"></a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="https://lh3.googleusercontent.com/fife/AAWUweXxlodmfHwKE9ncDtmU3HSHQBhAmiLKommSOCywc8AJsI1_GsnOHktY-ZVrfY-t8_nRlHH8mcs7iRigFSriVVvPXC53b76nqQL1i5mrWdqY4MzFYZ86PsDKqhRHaKMhh3k2u8uLoxftisCnSeFdTqZfZEZnrmz7sFCeE9K8rrhSVBPv8A-GeoXTf6V2C0azqLTDWx45yxKYxbCCbVpESNMdc_5tj1_uN7HXTi0xHq-K92ViUkeVChOkxVPq2fCR4RSq75iD8vU2Pq5fo9wX7FBBoVbs3znCPDyWU5s7fEfl3S1hkY89i8kEooIGkQ4th4RgQL0MB2VJwcpJ3OihztnjBQi4fZ2fJzj2IkyaLRSiEmGNRndfTvCV7Y3nTXaYWjYqDfrODRYYtIC7U59nLU73utV3q5A7z2N0CBUWaYd3JN8cfdhDDfcW3UTBV1IUO6AkdxoMQA6MxDoUOqN7-kOU5SoPMbxi7Lm-Amu-2rW97uFGZ-xEDrDmzkJKKVk3m9BjGE9TiWfsIYLrf_qhsH0s_fVWkHIGdopZPAH3xS5lxKgswYDYSkc10iqIm_1WkVvC7uJyi-Ee15OrloMEPzoLsIMeRdm9vwaNCeS2W3icZqLF7af3kqTpw3doRaQiBVcbrGgI06nvSg_QFA_2kigocLEA4EwRmE33rGo2lK9bmfvtH9ufFfrWvd6ymVK3MKkt-mif_TAS1JUCVpMcibxv9kHgJ2sjveY=w400-h380-p-k-nu-ft" width="380" height="300" style='object-fit: contain; width: 100%; height: 100%;'>
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Khyathi Vagolu</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                            <li><a href="https://www.facebook.com/profile.php?id=100010474903803" class="fab fa-facebook"></a></li>
+                              
+                            <li><a href="https://www.instagram.com/khyathi_0408/" class="fab fa-instagram"></a></li>
+                          </ul>
+                      </div>
+                  </div> 
+                  <div class="col-md-6 col-sm-6 col-lg-3">
+                      <div class="our-team">
+                          <div class="pic">
+                              <img src="https://lh3.google.com/u/0/d/1WCZB2Lw76CVircD1G6wee39CCVBjMIrJ=w400-h380-p-k-nu-iv1" width="380" height="300" style='object-fit: contain; width: 100%; height: 100%;'>
+                          </div>
+                          <div class="team-content">
+                              <h3 class="title">Rajit Das</h3>
+                              <span class="post">Coordinator</span>
+                          </div>
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/rajit.das.54" class="fab fa-facebook"></a></li>
+                              
+                              <li><a href="https://www.instagram.com/rajitdas1212/" class="fab fa-instagram"></a></li>
+                             
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>  
+                 
+        
+  
+                <!-- Section-header -->
+                <div class="section-header text-center get-touch">
+                  <h2 >GET IN TOUCH</h2>
+                </div>
+                <!-- /Section-header -->
+        
+                <!-- contact -->
+              <div class="column-contact">
+                <div class="row">
+  
+               
+                <div class="col-sm-12 col-md-4 music-info">
+                  
+                     <div class="text-center">
+                      <a href="https://www.facebook.com/MEIITK/"><i class="fab fa-facebook-f" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Facebook</h3>
+                      <p>Like and Follow our facebook page for regular updates.</p>
+                     </div>
+                  
+                  </div>
+              
+                  <div class="col-sm-12 col-md-4 music-info">
+                  
+                    <div class="text-center">
+                    <a href="https://instagram.com/mclubiitk?igshid=3qn2nyz2i8iq"><i class="fab fa-instagram" aria-hidden="true" style="transform: scale(2);"></i></a>
+                    <h3>Instagram</h3>
+                    <p>Follow us on Instagram.</p>
+                    </div>
+                  </div>
+                <div class="col-sm-12 col-md-4 music-info">
+                  
+                      <div class="text-center">
+                      <a href="https://www.youtube.com/channel/UCruim7KPbCjF1UIUXc217BA"><i class="fab fa-youtube" aria-hidden="true" style="transform: scale(2);"></i></a>
+                      <h3>Youtube</h3>
+                      <p>Subscribe The Official Channel Of The Club For Videos Of Our Productions.</p>
+                      </div>
+                 
+                  </div>
+                
+                </div>
+              </div> 
+          
+  
+      </section>
+      <!-- <i class="fab fa-facebook-f"></i> -->
+    
+    </main>
+  
+  </div>
+  
+  <footer>
+        
+    <div class="row">
+      <div class="col-md-6 col-sm-6 foot-text">
+        Copyright &copy; 2020 All Rights Reserved by MnC Council.
+      </div>
+      <div class="col-md-6 col-sm-6 foot-text">A Site by: <a href="https://www.facebook.com/mnciitk/">MnC Council IITK</a></div>
+    </div>
+    
+  </footer>
+
+
+</body>
+</html>
